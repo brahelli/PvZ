@@ -6,11 +6,11 @@ using UnityEngine.VFX;
 public class PlantController : MonoBehaviour
 {
     [SerializeField] Vector2[] raycastOrigins;
-    [SerializeField] Plant[] plantRowOne;
-    [SerializeField] Plant[] plantRowTwo;
-    [SerializeField] Plant[] plantRowThree;
-    [SerializeField] Plant[] plantRowFour;
-    [SerializeField] Plant[] plantRowFive;
+    [SerializeField] GameObject plantRowOne;
+    [SerializeField] GameObject plantRowTwo;
+    [SerializeField] GameObject plantRowThree;
+    [SerializeField] GameObject plantRowFour;
+    [SerializeField] GameObject plantRowFive;
 
     private void Update()
     {
@@ -22,34 +22,19 @@ public class PlantController : MonoBehaviour
                 switch (i)
                 {
                     case 0:
-                        for (int j = 0; j < plantRowOne.Length; j++)
-                        {
-                            plantRowOne[j].gameObject.GetComponent<Plant>().detectEnemy = true;
-                        }
+                        plantRowOne.tag = "ZombieDetected";
                         break;
                     case 1:
-                        for (int j = 0; j < plantRowTwo.Length; j++)
-                        {
-                            plantRowTwo[j].gameObject.GetComponent<Plant>().detectEnemy = true;
-                        }
+                        plantRowTwo.tag = "ZombieDetected";
                         break;
                     case 2:
-                        for (int j = 0; j < plantRowThree.Length; j++)
-                        {
-                            plantRowThree[j].gameObject.GetComponent<Plant>().detectEnemy = true;
-                        }
+                        plantRowThree.tag = "ZombieDetected";
                         break;
                     case 3:
-                        for (int j = 0; j < plantRowFour.Length; j++)
-                        {
-                            plantRowFour[j].gameObject.GetComponent<Plant>().detectEnemy = true;
-                        }
+                        plantRowFour.tag = "ZombieDetected";
                         break;
                     case 4:
-                        for (int j = 0; j < plantRowFive.Length; j++)
-                        {
-                            plantRowFive[j].gameObject.GetComponent<Plant>().detectEnemy = true;
-                        }
+                        plantRowFive.tag = "ZombieDetected";
                         break;
                     default:
                         break;
@@ -60,34 +45,19 @@ public class PlantController : MonoBehaviour
                 switch (i)
                 {
                     case 0:
-                        for (int j = 0; j < plantRowOne.Length; j++)
-                        {
-                            plantRowOne[j].gameObject.GetComponent<Plant>().detectEnemy = false;
-                        }
+                        plantRowOne.tag = "Untagged";
                         break;
                     case 1:
-                        for (int j = 0; j < plantRowTwo.Length; j++)
-                        {
-                            plantRowTwo[j].gameObject.GetComponent<Plant>().detectEnemy = false;
-                        }
+                        plantRowTwo.tag = "Untagged";
                         break;
                     case 2:
-                        for (int j = 0; j < plantRowThree.Length; j++)
-                        {
-                            plantRowThree[j].gameObject.GetComponent<Plant>().detectEnemy = false;
-                        }
+                        plantRowThree.tag = "Untagged";
                         break;
                     case 3:
-                        for (int j = 0; j < plantRowFour.Length; j++)
-                        {
-                            plantRowFour[j].gameObject.GetComponent<Plant>().detectEnemy = false;
-                        }
+                        plantRowFour.tag = "Untagged";
                         break;
                     case 4:
-                        for (int j = 0; j < plantRowFive.Length; j++)
-                        {
-                            plantRowFive[j].gameObject.GetComponent<Plant>().detectEnemy = false;
-                        }
+                        plantRowFive.tag = "Untagged";
                         break;
                     default:
                         break;

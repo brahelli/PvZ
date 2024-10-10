@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Plant : MonoBehaviour
@@ -12,6 +10,8 @@ public class Plant : MonoBehaviour
     float countdown = 0f;
     bool canFire = false;
 
+    [SerializeField] Transform parent;
+
     private void Update()
     {
         if (Time.time > countdown)
@@ -22,6 +22,15 @@ public class Plant : MonoBehaviour
         else
         {
             canFire = false;
+        }
+
+        if (parent.tag == "ZombieDetected")
+        {
+            detectEnemy = true;
+        }
+        else
+        {
+            detectEnemy = false;
         }
 
         if (detectEnemy && canFire)
