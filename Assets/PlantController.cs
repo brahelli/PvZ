@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VFX;
 
 public class PlantController : MonoBehaviour
 {
@@ -14,10 +11,15 @@ public class PlantController : MonoBehaviour
 
     private void Update()
     {
+        CheckForZombies();
+    }
+
+    void CheckForZombies()
+    {
         for (int i = 0; i < raycastOrigins.Length; i++)
         {
             RaycastHit2D hit = Physics2D.Raycast(raycastOrigins[i], Vector2.left);
-            if(hit.collider != null && hit.collider.tag == "Zombie")
+            if (hit.collider != null && hit.collider.tag == "Zombie")
             {
                 switch (i)
                 {
@@ -64,5 +66,13 @@ public class PlantController : MonoBehaviour
                 }
             }
         }
+    }
+
+    void SpawnPlants(int plantPosH, int plantPosV, string plantType)
+    {
+        // Plant Row Gameobjects need script that contains all the plants for the row.
+        // Each plant is accessible through the plant row gameobjects.
+
+        // This will use the plant row gameobjects to enable the plants at the correct positions, and set the correct type.
     }
 }

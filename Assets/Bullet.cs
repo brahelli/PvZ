@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
     private Rigidbody2D rb;
 
-    public float projectileSpeed = 2f;
-    public float projectileDamage = 1f;
+    public float projectileSpeed;
+    public float projectileDamage;
 
     private void Start()
     {
@@ -22,7 +20,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision != null && collision.tag == "Zombie")
+        if (collision != null && collision.tag == "Zombie")
         {
             Zombie zombie = collision.GetComponent<Zombie>();
             zombie.DealDamage(projectileDamage);

@@ -10,20 +10,26 @@ public class Plant : MonoBehaviour
     float countdown = 0f;
     bool canFire = false;
 
+    public float projectileDamage = 1f;
+    public float projectileSpeed = 2f;
+
     [SerializeField] Transform parent;
 
     private void Update()
     {
-        if (Time.time > countdown)
-        {
-            canFire = true;
-            countdown = Time.time + fireCooldown;
-        }
-        else
-        {
-            canFire = false;
-        }
+        FireCheck();
 
+        if (detectEnemy && canFire)
+        {
+            GameObject newBulletGO = Instantiate(bullet, transform.position, Quaternion.identity);
+            Bullet newBullet = newBulletGO.GetComponent<Bullet>();
+            newBullet.projectileDamage = projectileDamage;
+            newBullet.projectileSpeed = projectileSpeed;
+        }
+    }
+
+    void FireCheck()
+    {
         if (parent.tag == "ZombieDetected")
         {
             detectEnemy = true;
@@ -33,9 +39,14 @@ public class Plant : MonoBehaviour
             detectEnemy = false;
         }
 
-        if (detectEnemy && canFire)
+        if (Time.time > countdown)
         {
-            Instantiate(bullet, transform.position, Quaternion.identity);
+            canFire = true;
+            countdown = Time.time + fireCooldown;
+        }
+        else
+        {
+            canFire = false;
         }
     }
 }

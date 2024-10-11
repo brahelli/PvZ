@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BasicShot : MonoBehaviour
@@ -14,7 +12,7 @@ public class BasicShot : MonoBehaviour
 
     private void Update()
     {
-        if(Time.time > countdown)
+        if (Time.time > countdown)
         {
             canFire = true;
             countdown = Time.time + fireCooldown;

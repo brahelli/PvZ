@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Zombie : MonoBehaviour
@@ -19,11 +17,18 @@ public class Zombie : MonoBehaviour
     {
         rb.MovePosition(rb.position + Vector2.left * moveSpeed * Time.deltaTime);
 
-        if (health <= 0) {Destroy(gameObject);}
+        if (health <= 0) { Die(); }
     }
 
     public void DealDamage(float damage)
     {
         health -= damage;
+    }
+
+    public void Die()
+    {
+        moveSpeed = 0;
+        Debug.Log("Death Anim");
+        Destroy(gameObject, 1f);
     }
 }
