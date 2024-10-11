@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+// ^ for coroutines
 using UnityEngine;
 
 public class GameManager : MonoBehaviour

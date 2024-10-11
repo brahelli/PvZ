@@ -21,10 +21,7 @@ public class Plant : MonoBehaviour
 
         if (detectEnemy && canFire)
         {
-            GameObject newBulletGO = Instantiate(bullet, transform.position, Quaternion.identity);
-            Bullet newBullet = newBulletGO.GetComponent<Bullet>();
-            newBullet.projectileDamage = projectileDamage;
-            newBullet.projectileSpeed = projectileSpeed;
+            Instantiate(bullet, transform.position, Quaternion.identity);
         }
     }
 

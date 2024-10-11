@@ -4,8 +4,8 @@ public class Bullet : MonoBehaviour
 {
     private Rigidbody2D rb;
 
-    public float projectileSpeed;
-    public float projectileDamage;
+    public float projectileSpeed = 2f;
+    public float projectileDamage = 1f;
 
     private void Start()
     {
