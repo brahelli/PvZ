@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Sun : MonoBehaviour
@@ -9,6 +7,11 @@ public class Sun : MonoBehaviour
 
     float yToFall;
 
+    bool collected = false;
+
+    Vector2 collectedMoveTo = new Vector2(10.78f, 7.55f);
+    Vector2 collectedRef;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -16,18 +19,22 @@ public class Sun : MonoBehaviour
         rb.position = new Vector2(rb.position.x, 7f);
 
         yToFall = Random.Range(-3.5f, 3f);
-
-        Destroy(gameObject, 15f);
     }
 
     void Update()
     {
-        if(rb.position.y > yToFall)
+        if (rb.position.y > yToFall && !collected)
         {
             Fall();
         }
+        else if (collected)
+        {
+            //rb.MovePosition(rb.position + collectedMoveTo * fallSpeed * Time.deltaTime);
 
-        if(Input.touchCount > 0)
+            transform.position = Vector2.SmoothDamp(rb.position, collectedMoveTo, ref collectedRef, .75f);
+        }
+
+        if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
@@ -45,7 +52,7 @@ public class Sun : MonoBehaviour
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(mousePos);
             touchPos.z = 0f;
             RaycastHit2D hit = Physics2D.Raycast(touchPos, Vector3.forward);
-            if(hit.collider.name == "Sun")
+            if (hit.collider.name == "Sun")
             {
                 Collect();
             }
@@ -59,6 +66,9 @@ public class Sun : MonoBehaviour
 
     void Collect()
     {
-        Destroy(gameObject);
+        GameManager gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        gm.sun++;
+        collected = true;
+        //Destroy(gameObject);
     }
 }
