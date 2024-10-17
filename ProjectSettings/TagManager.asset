@@ -9,6 +9,8 @@ TagManager:
   - Plant
   - ZombieDetected
   - GameManager
+  - Selector
+  - PlantControl
   layers:
   - Default
   - TransparentFX

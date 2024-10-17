@@ -3,15 +3,18 @@ using UnityEngine;
 public class PlantController : MonoBehaviour
 {
     [SerializeField] Vector2[] raycastOrigins;
-    [SerializeField] GameObject plantRowOne;
-    [SerializeField] GameObject plantRowTwo;
-    [SerializeField] GameObject plantRowThree;
-    [SerializeField] GameObject plantRowFour;
-    [SerializeField] GameObject plantRowFive;
+    [SerializeField] PlantRow plantRowOne;
+    [SerializeField] PlantRow plantRowTwo;
+    [SerializeField] PlantRow plantRowThree;
+    [SerializeField] PlantRow plantRowFour;
+    [SerializeField] PlantRow plantRowFive;
+
+    [SerializeField] GameManager gameManager;
 
     private void Update()
     {
         CheckForZombies();
+
     }
 
     void CheckForZombies()
@@ -68,11 +71,59 @@ public class PlantController : MonoBehaviour
         }
     }
 
-    void SpawnPlants(int plantPosH, int plantPosV, string plantType)
+    public void StartSpawn(string plantType, int sunCost)
+    {
+        if (gameManager.sun == sunCost)
+        {
+            GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
+
+            for (int i = 0; i < selectors.Length; i++)
+            {
+                Selector selector = selectors[i].GetComponent<Selector>();
+
+                if (!selector.plantSpawned)
+                {
+                    selector.EnableSpawningHere(plantType);
+                }
+            }
+        }
+    }
+
+    public void SpawnPlants(int plantPosH, int plantPosV, string plantType)
     {
         // Plant Row Gameobjects need script that contains all the plants for the row.
         // Each plant is accessible through the plant row gameobjects.
 
         // This will use the plant row gameobjects to enable the plants at the correct positions, and set the correct type.
+
+        switch (plantPosV)
+        {
+            case 0:
+                plantRowOne.Spawn(plantPosH, plantType);
+                break;
+            case 1:
+                plantRowTwo.Spawn(plantPosH, plantType);
+                break;
+            case 2:
+                plantRowThree.Spawn(plantPosH, plantType);
+                break;
+            case 3:
+                plantRowFour.Spawn(plantPosH, plantType);
+                break;
+            case 4:
+                plantRowFive.Spawn(plantPosH, plantType);
+                break;
+            default: break;
+        }
+    }
+
+    public void PlantType(string plantType)
+    {
+        switch (plantType)
+        {
+            case "Peashooter":
+                StartSpawn(plantType, 100);
+                break;
+        }
     }
 }
