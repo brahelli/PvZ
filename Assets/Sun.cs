@@ -40,7 +40,7 @@ public class Sun : MonoBehaviour
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
             touchPos.z = 0f;
             RaycastHit2D hit = Physics2D.Raycast(touchPos, Vector3.forward);
-            if (hit.collider.name == "Sun")
+            if (hit && hit.collider.name == "Sun")
             {
                 Collect();
             }
@@ -52,7 +52,7 @@ public class Sun : MonoBehaviour
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(mousePos);
             touchPos.z = 0f;
             RaycastHit2D hit = Physics2D.Raycast(touchPos, Vector3.forward);
-            if (hit.collider.name == "Sun")
+            if (hit && hit.collider.name == "Sun")
             {
                 Collect();
             }
@@ -67,7 +67,7 @@ public class Sun : MonoBehaviour
     void Collect()
     {
         GameManager gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        gm.sun++;
+        gm.sun += 10;
         collected = true;
         //Destroy(gameObject);
     }

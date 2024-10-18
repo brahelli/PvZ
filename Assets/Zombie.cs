@@ -28,7 +28,6 @@ public class Zombie : MonoBehaviour
     public void Die()
     {
         moveSpeed = 0;
-        Debug.Log("Death Anim");
         Destroy(gameObject, 1f);
     }
 }

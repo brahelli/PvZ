@@ -73,12 +73,13 @@ public class PlantController : MonoBehaviour
 
     public void StartSpawn(string plantType, int sunCost)
     {
-        if (gameManager.sun == sunCost)
+        if (gameManager.sun >= sunCost)
         {
             GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
 
             for (int i = 0; i < selectors.Length; i++)
             {
+                selectors[i].SetActive(true);
                 Selector selector = selectors[i].GetComponent<Selector>();
 
                 if (!selector.plantSpawned)
@@ -95,7 +96,6 @@ public class PlantController : MonoBehaviour
         // Each plant is accessible through the plant row gameobjects.
 
         // This will use the plant row gameobjects to enable the plants at the correct positions, and set the correct type.
-
         switch (plantPosV)
         {
             case 0:
