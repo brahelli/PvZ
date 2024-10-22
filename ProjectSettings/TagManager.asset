@@ -11,6 +11,7 @@ TagManager:
   - GameManager
   - Selector
   - PlantControl
+  - Sun
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Zombie
   - Bullet
   - Sun
-  - 
+  - Selector
   - 
   - 
   - 

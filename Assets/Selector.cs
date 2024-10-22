@@ -5,60 +5,43 @@ public class Selector : MonoBehaviour
     public bool plantSpawned = false;
     PlantController plantController;
 
+    SpriteRenderer spriteRenderer;
+
     [SerializeField] int v;
     [SerializeField] int h;
 
-    Collider2D col;
+    BoxCollider2D col;
 
     string plantType;
 
     private void Start()
     {
-        //gameObject.SetActive(false);
         plantController = GameObject.FindGameObjectWithTag("PlantControl").gameObject.GetComponent<PlantController>();
-        col = gameObject.GetComponent<Collider2D>();
+        col = gameObject.GetComponent<BoxCollider2D>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
-    private void Update()
+    public void Spawn()
     {
-        col.enabled = !plantSpawned;
-
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            Vector3 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
-            touchPos.z = 0f;
-            RaycastHit2D hit = Physics2D.Raycast(touchPos, Vector3.forward);
-            if (hit && hit.collider.name == "Selector")
-            {
-                plantController.SpawnPlants(h, v, plantType);
-                plantSpawned = true;
-            }
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 mousePos = Input.mousePosition;
-            Vector3 touchPos = Camera.main.ScreenToWorldPoint(mousePos);
-            touchPos.z = 0f;
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.transform.position, touchPos);
-            Debug.Log(v.ToString() + "," + h.ToString());
-            if (hit == this)
-            {
-                plantController.SpawnPlants(h, v, plantType);
-                plantSpawned = true;
-            }
-        }
+        plantController.SpawnPlants(h, v, plantType);
+        plantController.EndSpawn();
+        plantSpawned = true;
     }
 
     public void EnableSpawningHere(string plantTypeToSpawn)
     {
-        gameObject.SetActive(true);
-        plantType = plantTypeToSpawn;
+        if (!plantSpawned)
+        {
+            col.enabled = true;
+            spriteRenderer.enabled = true;
+            plantType = plantTypeToSpawn;
+        }
     }
 
     public void DisableSpawningHere()
     {
-        gameObject.SetActive(false);
+        col.enabled = false;
+        spriteRenderer.enabled = false;
+        plantType = null;
     }
 }

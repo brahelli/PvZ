@@ -12,6 +12,8 @@ public class Sun : MonoBehaviour
     Vector2 collectedMoveTo = new Vector2(10.78f, 7.55f);
     Vector2 collectedRef;
 
+    GameManager gm;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,6 +21,8 @@ public class Sun : MonoBehaviour
         rb.position = new Vector2(rb.position.x, 7f);
 
         yToFall = Random.Range(-3.5f, 3f);
+
+        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     void Update()
@@ -33,30 +37,6 @@ public class Sun : MonoBehaviour
 
             transform.position = Vector2.SmoothDamp(rb.position, collectedMoveTo, ref collectedRef, .75f);
         }
-
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            Vector3 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
-            touchPos.z = 0f;
-            RaycastHit2D hit = Physics2D.Raycast(touchPos, Vector3.forward);
-            if (hit && hit.collider.name == "Sun")
-            {
-                Collect();
-            }
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 mousePos = Input.mousePosition;
-            Vector3 touchPos = Camera.main.ScreenToWorldPoint(mousePos);
-            touchPos.z = 0f;
-            RaycastHit2D hit = Physics2D.Raycast(touchPos, Vector3.forward);
-            if (hit && hit.collider.name == "Sun")
-            {
-                Collect();
-            }
-        }
     }
 
     void Fall()
@@ -64,11 +44,10 @@ public class Sun : MonoBehaviour
         rb.MovePosition(rb.position + Vector2.down * fallSpeed * Time.deltaTime);
     }
 
-    void Collect()
+    public void Collect()
     {
-        GameManager gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        gm.sun += 10;
+        gm.sun += 25;
         collected = true;
-        //Destroy(gameObject);
+        Destroy(gameObject, 3f);
     }
 }

@@ -9,19 +9,21 @@ public class PlantController : MonoBehaviour
     [SerializeField] PlantRow plantRowFour;
     [SerializeField] PlantRow plantRowFive;
 
+    [SerializeField] LayerMask zombies;
+
     [SerializeField] GameManager gameManager;
 
     private void Update()
     {
         CheckForZombies();
-
     }
 
     void CheckForZombies()
     {
         for (int i = 0; i < raycastOrigins.Length; i++)
         {
-            RaycastHit2D hit = Physics2D.Raycast(raycastOrigins[i], Vector2.left);
+            RaycastHit2D hit = Physics2D.Raycast(raycastOrigins[i], Vector2.left, zombies);
+
             if (hit.collider != null && hit.collider.tag == "Zombie")
             {
                 switch (i)
@@ -79,23 +81,25 @@ public class PlantController : MonoBehaviour
 
             for (int i = 0; i < selectors.Length; i++)
             {
-                selectors[i].SetActive(true);
                 Selector selector = selectors[i].GetComponent<Selector>();
-
-                if (!selector.plantSpawned)
-                {
-                    selector.EnableSpawningHere(plantType);
-                }
+                selector.EnableSpawningHere(plantType);
             }
+        }
+    }
+
+    public void EndSpawn()
+    {
+        GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
+
+        for (int i = 0; i < selectors.Length; i++)
+        {
+            Selector selector = selectors[i].GetComponent<Selector>();
+            selector.DisableSpawningHere();
         }
     }
 
     public void SpawnPlants(int plantPosH, int plantPosV, string plantType)
     {
-        // Plant Row Gameobjects need script that contains all the plants for the row.
-        // Each plant is accessible through the plant row gameobjects.
-
-        // This will use the plant row gameobjects to enable the plants at the correct positions, and set the correct type.
         switch (plantPosV)
         {
             case 0:
