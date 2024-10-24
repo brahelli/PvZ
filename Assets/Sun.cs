@@ -14,11 +14,11 @@ public class Sun : MonoBehaviour
 
     GameManager gm;
 
+    public bool spawnedBySunflower = false;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
-        rb.position = new Vector2(rb.position.x, 7f);
 
         yToFall = Random.Range(-3.5f, 3f);
 
@@ -27,11 +27,11 @@ public class Sun : MonoBehaviour
 
     void Update()
     {
-        if (rb.position.y > yToFall && !collected)
+        if (rb.position.y > yToFall && !collected && !spawnedBySunflower)
         {
             Fall();
         }
-        else if (collected)
+        else if (collected && !spawnedBySunflower)
         {
             //rb.MovePosition(rb.position + collectedMoveTo * fallSpeed * Time.deltaTime);
 

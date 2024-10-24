@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
             Selector selector = hit.transform.gameObject.GetComponent<Selector>();
             selector.Spawn();
         }
-        else if (hit.collider.tag == "Sun")
+        else if (hit && hit.collider.tag == "Sun")
         {
             Sun sun = hit.transform.gameObject.GetComponent<Sun>();
             sun.Collect();

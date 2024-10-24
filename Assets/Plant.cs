@@ -2,8 +2,12 @@ using UnityEngine;
 
 public class Plant : MonoBehaviour
 {
-    [SerializeField] private GameObject bullet;
+    [SerializeField] GameObject[] availableProjectiles;
+    [SerializeField] Sprite[] availableSprites;
 
+    GameObject bulletGO;
+    SpriteRenderer plantSprite;
+    
     public bool detectEnemy;
 
     public float fireCooldown = 1;
@@ -15,13 +19,23 @@ public class Plant : MonoBehaviour
 
     [SerializeField] Transform parent;
 
+    private void Start()
+    {
+        plantSprite = GetComponent<SpriteRenderer>();
+    }
+
     private void Update()
     {
         FireCheck();
 
         if (detectEnemy && canFire)
         {
-            Instantiate(bullet, transform.position, Quaternion.identity);
+            GameObject bullet = Instantiate(bulletGO, transform.position + new Vector3(0, Random.Range(-.4f, .4f), 0), Quaternion.identity);
+            if (bullet.GetComponent<Bullet>() != null)
+            {
+                bullet.GetComponent<Bullet>().projectileDamage = projectileDamage;
+                bullet.GetComponent<Bullet>().projectileSpeed = projectileSpeed;
+            }
         }
     }
 
@@ -44,6 +58,21 @@ public class Plant : MonoBehaviour
         else
         {
             canFire = false;
+        }
+    }
+
+    public void SetType(string type)
+    {
+        switch (type)
+        {
+            case "Peashooter":
+                bulletGO = availableProjectiles[0];
+                plantSprite.sprite = availableSprites[0];
+                break;
+            case "Sunflower":
+                bulletGO = availableProjectiles[1];
+                plantSprite.sprite = availableSprites[1];
+                break;
         }
     }
 }

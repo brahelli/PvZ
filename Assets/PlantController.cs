@@ -84,6 +84,8 @@ public class PlantController : MonoBehaviour
                 Selector selector = selectors[i].GetComponent<Selector>();
                 selector.EnableSpawningHere(plantType);
             }
+
+            gameManager.sun -= sunCost;
         }
     }
 
@@ -127,6 +129,9 @@ public class PlantController : MonoBehaviour
         {
             case "Peashooter":
                 StartSpawn(plantType, 100);
+                break;
+            case "Sunflower":
+                StartSpawn(plantType, 25);
                 break;
         }
     }

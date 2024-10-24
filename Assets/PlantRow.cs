@@ -6,6 +6,9 @@ public class PlantRow : MonoBehaviour
 
     public void Spawn(int plant, string plantType)
     {
-        plants[plant].gameObject.SetActive(true);
+        Plant currentPlant = plants[plant];
+        currentPlant.gameObject.SetActive(true);
+
+        currentPlant.SetType(plantType);
     }
 }
