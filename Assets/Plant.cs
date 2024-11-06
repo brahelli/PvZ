@@ -4,6 +4,7 @@ public class Plant : MonoBehaviour
 {
     [SerializeField] GameObject[] availableProjectiles;
     [SerializeField] Sprite[] availableSprites;
+    Sprite sprite;
 
     GameObject bulletGO;
     SpriteRenderer plantSprite;
@@ -21,11 +22,13 @@ public class Plant : MonoBehaviour
 
     private void Start()
     {
-        plantSprite = GetComponent<SpriteRenderer>();
+        plantSprite = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
+        plantSprite.sprite = sprite;
+
         FireCheck();
 
         if (detectEnemy && canFire)
@@ -35,6 +38,10 @@ public class Plant : MonoBehaviour
             {
                 bullet.GetComponent<Bullet>().projectileDamage = projectileDamage;
                 bullet.GetComponent<Bullet>().projectileSpeed = projectileSpeed;
+            }
+            else if (bullet.GetComponent<Sun>() != null)
+            {
+                bullet.GetComponent<Sun>().spawnedBySunflower = true;
             }
         }
     }
@@ -63,15 +70,16 @@ public class Plant : MonoBehaviour
 
     public void SetType(string type)
     {
+        Debug.Log(type);
         switch (type)
         {
             case "Peashooter":
                 bulletGO = availableProjectiles[0];
-                plantSprite.sprite = availableSprites[0];
+                sprite = availableSprites[0];
                 break;
             case "Sunflower":
                 bulletGO = availableProjectiles[1];
-                plantSprite.sprite = availableSprites[1];
+                sprite = availableSprites[1];
                 break;
         }
     }

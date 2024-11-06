@@ -10,7 +10,11 @@ public class Sun : MonoBehaviour
     bool collected = false;
 
     Vector2 collectedMoveTo = new Vector2(10.78f, 7.55f);
+    Vector2 otherMoveTo;
+
     Vector2 collectedRef;
+    Vector2 otherRef;
+    Vector2 fallRef;
 
     GameManager gm;
 
@@ -23,25 +27,26 @@ public class Sun : MonoBehaviour
         yToFall = Random.Range(-3.5f, 3f);
 
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+        otherMoveTo = rb.position + new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
+        Debug.Log(otherMoveTo);
     }
 
     void Update()
     {
         if (rb.position.y > yToFall && !collected && !spawnedBySunflower)
         {
-            Fall();
+            transform.position = Vector2.SmoothDamp(rb.position, new Vector2(rb.position.x, yToFall), ref collectedRef, 10f);
         }
-        else if (collected && !spawnedBySunflower)
+        else if (spawnedBySunflower)
         {
-            //rb.MovePosition(rb.position + collectedMoveTo * fallSpeed * Time.deltaTime);
+            transform.position = Vector2.SmoothDamp(rb.position, otherMoveTo, ref otherRef, .75f);
+        }
 
+        if (collected)
+        {
             transform.position = Vector2.SmoothDamp(rb.position, collectedMoveTo, ref collectedRef, .75f);
         }
-    }
-
-    void Fall()
-    {
-        rb.MovePosition(rb.position + Vector2.down * fallSpeed * Time.deltaTime);
     }
 
     public void Collect()
