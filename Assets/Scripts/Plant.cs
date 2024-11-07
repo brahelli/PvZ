@@ -70,7 +70,6 @@ public class Plant : MonoBehaviour
 
     public void SetType(string type)
     {
-        Debug.Log(type);
         switch (type)
         {
             case "Peashooter":

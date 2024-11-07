@@ -3,7 +3,6 @@ using UnityEngine;
 public class Sun : MonoBehaviour
 {
     Rigidbody2D rb;
-    [SerializeField] float fallSpeed = 1f;
 
     float yToFall;
 
@@ -29,7 +28,6 @@ public class Sun : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         otherMoveTo = rb.position + new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
-        Debug.Log(otherMoveTo);
     }
 
     void Update()
