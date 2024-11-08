@@ -49,8 +49,11 @@ public class Sun : MonoBehaviour
 
     public void Collect()
     {
-        gm.sun += 25;
-        collected = true;
-        Destroy(gameObject, 3f);
+        if (!collected)
+        {
+            gm.sun += 25;
+            collected = true;
+            Destroy(gameObject, 3f);
+        }
     }
 }
