@@ -4981,12 +4981,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 3
 --- !u!114 &5353988465876831646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5076,7 +5076,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8043283be4f34154eb1e6126368f4460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 0.5
   spawnedBySunflower: 0
 --- !u!1 &6679582950485347040
 GameObject:

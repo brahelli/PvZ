@@ -56,4 +56,12 @@ public class Sun : MonoBehaviour
             Destroy(gameObject, 3f);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            Collect();
+        }
+    }
 }
