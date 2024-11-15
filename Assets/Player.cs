@@ -23,7 +23,6 @@ public class Player : MonoBehaviour
     float r, g, b;
 
     RaycastHit2D hit;
-    public LayerMask hitArea;
 
     public void OnMoveCursor(InputAction.CallbackContext context)
     {
@@ -86,19 +85,16 @@ public class Player : MonoBehaviour
             timeSincePress = Time.time + 0.1f;
         }
 
-        Debug.Log(free);
-
         if (click)
         {
             TouchScreen(cursorPos);
         }
-
-        Debug.Log(timeSincePress.ToString() + " : " + Time.time.ToString());
     }
 
     void TouchScreen(Vector2 touchPosScreen)
     {
-        hit = Physics2D.Raycast(p1Cursor.position, Vector3.forward, hitArea);
+        hit = Physics2D.Raycast(p1Cursor.position, Vector3.forward);
+        Debug.Log(hit.collider.name);
         HitDetector(hit);
     }
 
@@ -109,11 +105,6 @@ public class Player : MonoBehaviour
             Selector selector = hit.transform.gameObject.GetComponent<Selector>();
             selector.Spawn();
         }
-        /*else if (hit && hit.collider.tag == "Sun")
-        {
-            Sun sun = hit.transform.gameObject.GetComponent<Sun>();
-            sun.Collect();
-        }*/
         else
         {
             return;
