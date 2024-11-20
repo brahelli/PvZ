@@ -128,10 +128,6 @@ MonoBehaviour:
   p1Cursor: {fileID: 559752256308262100}
   cursor: {fileID: 8944565405823141525}
   trail: {fileID: 3446720041294920949}
-  hitArea:
-    serializedVersion: 2
-    m_Bits: 512
-  workpls: {fileID: 1195588657242287798, guid: 0fe5b802f8330df4cb04d95a376700d8, type: 3}
 --- !u!1 &4977820738922705941
 GameObject:
   m_ObjectHideFlags: 0

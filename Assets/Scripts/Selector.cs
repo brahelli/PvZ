@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Selector : MonoBehaviour
+public class Selector : MonoBehaviour, IPointerClickHandler
 {
     public bool plantSpawned = false;
     PlantController plantController;
@@ -43,5 +44,12 @@ public class Selector : MonoBehaviour
         col.enabled = false;
         spriteRenderer.enabled = false;
         plantType = null;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        plantController.SpawnPlants(h, v, plantType);
+        plantController.EndSpawn();
+        plantSpawned = true;
     }
 }

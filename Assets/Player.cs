@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
@@ -54,19 +55,19 @@ public class Player : MonoBehaviour
         g = Random.Range(0, 100);
         b = Random.Range(0, 100);
 
-        cursorColor = new Color(r / 100,g / 100,b / 100);
+        cursorColor = new Color(r / 100, g / 100, b / 100);
         cursor.color = cursorColor;
         trail.color = cursorColor;
     }
 
     private void Update()
     {
-        if(!snap && free)
+        if (!snap && free)
         {
             switch (pi.currentControlScheme)
             {
                 case "Controller":
-                    p1Cursor.position += new Vector3(cursorPos.x, cursorPos.y, 0f);
+                    p1Cursor.position += new Vector3(cursorPos.x, cursorPos.y, 0f) * 0.25f;
                     break;
                 case "K&M":
                     p1Cursor.position = Camera.main.ScreenToWorldPoint(cursorPos);
@@ -78,7 +79,7 @@ public class Player : MonoBehaviour
                     break;
             }
         }
-        else if(timeSincePress <= Time.time && snap && !free)
+        else if (timeSincePress <= Time.time && snap && !free)
         {
             p1Cursor.position += new Vector3(cursorGridSnap.x, 0, 0) * 1.2f;
             p1Cursor.position += new Vector3(0, cursorGridSnap.y, 0) * 1.2f;
@@ -89,21 +90,23 @@ public class Player : MonoBehaviour
         {
             TouchScreen(cursorPos);
         }
+        Debug.DrawRay(Camera.main.transform.position, p1Cursor.position);
     }
 
     void TouchScreen(Vector2 touchPosScreen)
     {
-        hit = Physics2D.Raycast(p1Cursor.position, Vector3.forward);
-        Debug.Log(hit.collider.name);
+        hit = Physics2D.Raycast(Camera.main.transform.position, p1Cursor.position);
         HitDetector(hit);
     }
 
     void HitDetector(RaycastHit2D hit)
     {
+        Debug.Log(hit.collider.name);
         if (hit && hit.collider.name == "Selector")
         {
+            Debug.Log(hit.collider.name);
             Selector selector = hit.transform.gameObject.GetComponent<Selector>();
-            selector.Spawn();
+            //selector.Spawn();
         }
         else
         {
