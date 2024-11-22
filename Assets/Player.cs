@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     Vector2 cursorPos;
-    bool click;
+    public bool click;
 
     Vector2 cursorGridSnap;
     bool snap;
@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
 
         if (click)
         {
-            TouchScreen(cursorPos);
+            //TouchScreen(cursorPos);
         }
         Debug.DrawRay(Camera.main.transform.position, p1Cursor.position);
     }
