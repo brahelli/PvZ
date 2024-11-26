@@ -101,10 +101,8 @@ public class Player : MonoBehaviour
 
     void HitDetector(RaycastHit2D hit)
     {
-        Debug.Log(hit.collider.name);
         if (hit && hit.collider.name == "Selector")
         {
-            Debug.Log(hit.collider.name);
             Selector selector = hit.transform.gameObject.GetComponent<Selector>();
             //selector.Spawn();
         }

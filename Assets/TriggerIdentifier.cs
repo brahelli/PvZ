@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TriggerIdentifier : MonoBehaviour
@@ -13,7 +11,7 @@ public class TriggerIdentifier : MonoBehaviour
         {
             collision.gameObject.GetComponent<Sun>().Collect();
         }
-        else if(collision.tag == "Selector" && player.click)
+        else if (collision.tag == "Selector" && player.click)
         {
             collision.gameObject.GetComponent<Selector>().Spawn();
         }

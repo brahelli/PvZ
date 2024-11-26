@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d307b68ab7b86b4eae88e7d1f8c1de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  click: 0
   p1Cursor: {fileID: 559752256308262100}
   cursor: {fileID: 8944565405823141525}
   trail: {fileID: 3446720041294920949}
@@ -271,6 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1258415b1abf89447bc614d1fdc0131c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1386019888759468235}
 --- !u!1 &8701623556340826379
 GameObject:
   m_ObjectHideFlags: 0
