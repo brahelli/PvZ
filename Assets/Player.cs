@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
@@ -16,6 +15,7 @@ public class Player : MonoBehaviour
     PlayerInput pi;
 
     [SerializeField] Transform p1Cursor;
+    Vector3 moveRef;
 
     [SerializeField] SpriteRenderer cursor;
     [SerializeField] SpriteRenderer trail;
@@ -51,9 +51,9 @@ public class Player : MonoBehaviour
     {
         pi = GetComponent<PlayerInput>();
 
-        r = Random.Range(0, 100);
-        g = Random.Range(0, 100);
-        b = Random.Range(0, 100);
+        r = Random.Range(25, 100);
+        g = Random.Range(25, 100);
+        b = Random.Range(25, 100);
 
         cursorColor = new Color(r / 100, g / 100, b / 100);
         cursor.color = cursorColor;
@@ -81,34 +81,8 @@ public class Player : MonoBehaviour
         }
         else if (timeSincePress <= Time.time && snap && !free)
         {
-            p1Cursor.position += new Vector3(cursorGridSnap.x, 0, 0) * 1.2f;
-            p1Cursor.position += new Vector3(0, cursorGridSnap.y, 0) * 1.2f;
+            p1Cursor.position += new Vector3(cursorGridSnap.x, cursorGridSnap.y, 0) * 1.2f;
             timeSincePress = Time.time + 0.1f;
-        }
-
-        if (click)
-        {
-            //TouchScreen(cursorPos);
-        }
-        Debug.DrawRay(Camera.main.transform.position, p1Cursor.position);
-    }
-
-    void TouchScreen(Vector2 touchPosScreen)
-    {
-        hit = Physics2D.Raycast(Camera.main.transform.position, p1Cursor.position);
-        HitDetector(hit);
-    }
-
-    void HitDetector(RaycastHit2D hit)
-    {
-        if (hit && hit.collider.name == "Selector")
-        {
-            Selector selector = hit.transform.gameObject.GetComponent<Selector>();
-            //selector.Spawn();
-        }
-        else
-        {
-            return;
         }
     }
 }

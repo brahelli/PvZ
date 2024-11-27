@@ -4,8 +4,9 @@ public class TriggerIdentifier : MonoBehaviour
 {
     [SerializeField] Player player;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
+        Debug.Log(player.click);
         Debug.Log(collision.name);
         if (collision.tag == "Sun")
         {
