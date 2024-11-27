@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     [SerializeField] Transform p1Cursor;
     Vector3 moveRef;
 
-    [SerializeField] SpriteRenderer cursor;
+    [SerializeField] CursorChange cursor;
     [SerializeField] SpriteRenderer trail;
 
     Color cursorColor;
@@ -56,7 +56,8 @@ public class Player : MonoBehaviour
         b = Random.Range(25, 100);
 
         cursorColor = new Color(r / 100, g / 100, b / 100);
-        cursor.color = cursorColor;
+        cursor.pi = pi;
+        cursor.color = new Color(r / 100, g / 100, b / 100);
         trail.color = cursorColor;
     }
 
@@ -67,12 +68,9 @@ public class Player : MonoBehaviour
             switch (pi.currentControlScheme)
             {
                 case "Controller":
-                    p1Cursor.position += new Vector3(cursorPos.x, cursorPos.y, 0f) * 0.25f;
+                    p1Cursor.position += (Vector3)cursorPos * 0.25f;
                     break;
                 case "K&M":
-                    p1Cursor.position = Camera.main.ScreenToWorldPoint(cursorPos);
-                    p1Cursor.position = new Vector3(p1Cursor.position.x, p1Cursor.position.y, 0);
-                    break;
                 case "Touch":
                     p1Cursor.position = Camera.main.ScreenToWorldPoint(cursorPos);
                     p1Cursor.position = new Vector3(p1Cursor.position.x, p1Cursor.position.y, 0);
@@ -81,8 +79,10 @@ public class Player : MonoBehaviour
         }
         else if (timeSincePress <= Time.time && snap && !free)
         {
-            p1Cursor.position += new Vector3(cursorGridSnap.x, cursorGridSnap.y, 0) * 1.2f;
+            p1Cursor.position += (Vector3)cursorGridSnap * 1.2f;
             timeSincePress = Time.time + 0.1f;
         }
+
+        cursor.joyCapMoveTo = cursorPos;
     }
 }
