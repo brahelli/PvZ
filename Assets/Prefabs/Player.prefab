@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: 0
   p1Cursor: {fileID: 559752256308262100}
-  cursor: {fileID: 8944565405823141525}
+  cursor: {fileID: 1572089664908411050}
   trail: {fileID: 3446720041294920949}
 --- !u!1 &2661313139622134275
 GameObject:
@@ -202,7 +202,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
   m_FlipX: 0
@@ -286,7 +286,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4cf0da23b983aa94abc586005eb7d1b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -458,8 +458,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9351de1261b0b6a4397cedfc042672a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pi: {fileID: 0}
-  cursors: []
+  pi: {fileID: 2958877229582050603}
+  cursors:
+  - {fileID: 5943165247149028440}
+  - {fileID: 177615793472746868}
+  - {fileID: 3011152013289671725}
+  - {fileID: 2914811496585846952}
+  joyCap: {fileID: 1031835943440294095}
+  joyCapMoveTo: {x: 0, y: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &5415300717409370929
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +539,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -616,7 +623,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7e1a6cc7ae818984682d662c01578a8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

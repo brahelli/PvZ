@@ -3,32 +3,32 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    Vector2 cursorPos;
+    private Vector2 _cursorPos;
     public bool click;
 
-    Vector2 cursorGridSnap;
-    bool snap;
-    bool free;
+    private Vector2 _cursorGridSnap;
+    private bool _snap;
+    private bool _free;
 
-    float timeSincePress = 0;
+    private float _timeSincePress = 0;
 
-    PlayerInput pi;
+    private PlayerInput _pi;
 
-    [SerializeField] Transform p1Cursor;
-    Vector3 moveRef;
+    [SerializeField] private Transform p1Cursor;
+    private Vector3 _moveRef;
 
-    [SerializeField] CursorChange cursor;
-    [SerializeField] SpriteRenderer trail;
+    [SerializeField] private CursorChange cursor;
+    [SerializeField] private SpriteRenderer trail;
 
-    Color cursorColor;
-    float r, g, b;
+    private Color _cursorColor;
+    private float _r, _g, _b;
 
-    RaycastHit2D hit;
+    private RaycastHit2D _hit;
 
     public void OnMoveCursor(InputAction.CallbackContext context)
     {
-        cursorPos = context.ReadValue<Vector2>();
-        free = context.performed;
+        _cursorPos = context.ReadValue<Vector2>();
+        _free = context.performed;
     }
 
     public void OnCursorClick(InputAction.CallbackContext context)
@@ -38,51 +38,51 @@ public class Player : MonoBehaviour
 
     public void OnCursorGridSnap(InputAction.CallbackContext context)
     {
-        cursorGridSnap = context.ReadValue<Vector2>();
-        snap = context.performed;
-        if (free)
+        _cursorGridSnap = context.ReadValue<Vector2>();
+        _snap = context.performed;
+        if (_free)
         {
             p1Cursor.position = new Vector3(-7.8f, 3, 0);
         }
-        free = false;
+        _free = false;
     }
 
     private void Start()
     {
-        pi = GetComponent<PlayerInput>();
+        _pi = GetComponent<PlayerInput>();
 
-        r = Random.Range(25, 100);
-        g = Random.Range(25, 100);
-        b = Random.Range(25, 100);
+        _r = Random.Range(25, 100);
+        _g = Random.Range(25, 100);
+        _b = Random.Range(25, 100);
 
-        cursorColor = new Color(r / 100, g / 100, b / 100);
-        cursor.pi = pi;
-        cursor.color = new Color(r / 100, g / 100, b / 100);
-        trail.color = cursorColor;
+        _cursorColor = new Color(_r / 100, _g / 100, _b / 100);
+        cursor.pi = _pi;
+        cursor.color = new Color(_r / 100, _g / 100, _b / 100);
+        trail.color = _cursorColor;
     }
 
     private void Update()
     {
-        if (!snap && free)
+        if (!_snap && _free)
         {
-            switch (pi.currentControlScheme)
+            switch (_pi.currentControlScheme)
             {
                 case "Controller":
-                    p1Cursor.position += (Vector3)cursorPos * 0.25f;
+                    p1Cursor.position += (Vector3)_cursorPos * 0.25f;
                     break;
                 case "K&M":
                 case "Touch":
-                    p1Cursor.position = Camera.main.ScreenToWorldPoint(cursorPos);
+                    p1Cursor.position = Camera.main.ScreenToWorldPoint(_cursorPos);
                     p1Cursor.position = new Vector3(p1Cursor.position.x, p1Cursor.position.y, 0);
                     break;
             }
         }
-        else if (timeSincePress <= Time.time && snap && !free)
+        else if (_timeSincePress <= Time.time && _snap && !_free)
         {
-            p1Cursor.position += (Vector3)cursorGridSnap * 1.2f;
-            timeSincePress = Time.time + 0.1f;
+            p1Cursor.position += (Vector3)_cursorGridSnap * 1.2f;
+            _timeSincePress = Time.time + 0.1f;
         }
 
-        cursor.joyCapMoveTo = cursorPos;
+        cursor.joyCapMoveTo = _cursorPos;
     }
 }

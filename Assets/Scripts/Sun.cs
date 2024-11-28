@@ -2,57 +2,57 @@ using UnityEngine;
 
 public class Sun : MonoBehaviour
 {
-    Rigidbody2D rb;
+    private Rigidbody2D _rb;
 
-    float yToFall;
+    private float _yToFall;
 
-    bool collected = false;
+    private bool _collected = false;
 
-    Vector2 collectedMoveTo = new Vector2(10.78f, 7.55f);
-    Vector2 otherMoveTo;
+    private readonly Vector2 _collectedMoveTo = new Vector2(10.78f, 7.55f);
+    private Vector2 _otherMoveTo;
 
-    Vector2 collectedRef;
-    Vector2 otherRef;
-    Vector2 fallRef;
+    private Vector2 _collectedRef;
+    private Vector2 _otherRef;
+    private Vector2 _fallRef;
 
-    GameManager gm;
+    private GameManager _gm;
 
     public bool spawnedBySunflower = false;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();
 
-        yToFall = Random.Range(-3.5f, 3f);
+        _yToFall = Random.Range(-3.5f, 3f);
 
-        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        _gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
-        otherMoveTo = rb.position + new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
+        _otherMoveTo = _rb.position + new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
     }
 
-    void Update()
+    private void Update()
     {
-        if (rb.position.y > yToFall && !collected && !spawnedBySunflower)
+        if (_rb.position.y > _yToFall && !_collected && !spawnedBySunflower)
         {
-            transform.position = Vector2.SmoothDamp(rb.position, new Vector2(rb.position.x, yToFall), ref collectedRef, 10f);
+            transform.position = Vector2.SmoothDamp(_rb.position, new Vector2(_rb.position.x, _yToFall), ref _collectedRef, 10f);
         }
         else if (spawnedBySunflower)
         {
-            transform.position = Vector2.SmoothDamp(rb.position, otherMoveTo, ref otherRef, .75f);
+            transform.position = Vector2.SmoothDamp(_rb.position, _otherMoveTo, ref _otherRef, .75f);
         }
 
-        if (collected)
+        if (_collected)
         {
-            transform.position = Vector2.SmoothDamp(rb.position, collectedMoveTo, ref collectedRef, .75f);
+            transform.position = Vector2.SmoothDamp(_rb.position, _collectedMoveTo, ref _collectedRef, .75f);
         }
     }
 
     public void Collect()
     {
-        if (!collected)
+        if (!_collected)
         {
-            gm.sun += 25;
-            collected = true;
+            _gm.sun += 25;
+            _collected = true;
             Destroy(gameObject, 3f);
         }
     }

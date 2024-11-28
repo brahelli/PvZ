@@ -2,38 +2,38 @@ using UnityEngine;
 
 public class Plant : MonoBehaviour
 {
-    [SerializeField] GameObject[] availableProjectiles;
-    [SerializeField] Sprite[] availableSprites;
-    Sprite sprite;
+    [SerializeField] private GameObject[] availableProjectiles;
+    [SerializeField] private Sprite[] availableSprites;
+    private Sprite _sprite;
 
-    GameObject bulletGO;
-    SpriteRenderer plantSprite;
+    private GameObject _bulletGo;
+    private SpriteRenderer _plantSprite;
     
     public bool detectEnemy;
 
     public float fireCooldown = 1;
-    float countdown = 0f;
-    bool canFire = false;
+    private float _countdown = 0f;
+    private bool _canFire = false;
 
     public float projectileDamage = 1f;
     public float projectileSpeed = 2f;
 
-    [SerializeField] Transform parent;
+    [SerializeField] private Transform parent;
 
     private void Start()
     {
-        plantSprite = this.gameObject.GetComponent<SpriteRenderer>();
+        _plantSprite = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
-        plantSprite.sprite = sprite;
+        _plantSprite.sprite = _sprite;
 
         FireCheck();
 
-        if (detectEnemy && canFire)
+        if (detectEnemy && _canFire)
         {
-            GameObject bullet = Instantiate(bulletGO, transform.position + new Vector3(0, Random.Range(-.4f, .4f), 0), Quaternion.identity);
+            GameObject bullet = Instantiate(_bulletGo, transform.position + new Vector3(0, Random.Range(-.4f, .4f), 0), Quaternion.identity);
             if (bullet.GetComponent<Bullet>() != null)
             {
                 bullet.GetComponent<Bullet>().projectileDamage = projectileDamage;
@@ -46,7 +46,7 @@ public class Plant : MonoBehaviour
         }
     }
 
-    void FireCheck()
+    private void FireCheck()
     {
         if (parent.tag == "ZombieDetected")
         {
@@ -57,14 +57,14 @@ public class Plant : MonoBehaviour
             detectEnemy = false;
         }
 
-        if (Time.time > countdown)
+        if (Time.time > _countdown)
         {
-            canFire = true;
-            countdown = Time.time + fireCooldown;
+            _canFire = true;
+            _countdown = Time.time + fireCooldown;
         }
         else
         {
-            canFire = false;
+            _canFire = false;
         }
     }
 
@@ -73,12 +73,12 @@ public class Plant : MonoBehaviour
         switch (type)
         {
             case "Peashooter":
-                bulletGO = availableProjectiles[0];
-                sprite = availableSprites[0];
+                _bulletGo = availableProjectiles[0];
+                _sprite = availableSprites[0];
                 break;
             case "Sunflower":
-                bulletGO = availableProjectiles[1];
-                sprite = availableSprites[1];
+                _bulletGo = availableProjectiles[1];
+                _sprite = availableSprites[1];
                 break;
         }
     }

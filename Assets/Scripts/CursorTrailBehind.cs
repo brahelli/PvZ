@@ -5,11 +5,11 @@ using UnityEngine;
 public class CursorTrailBehind : MonoBehaviour
 {
 
-    [SerializeField] Transform cursorPos;
-    Vector2 refVelocity;
+    [SerializeField] private Transform cursorPos;
+    private Vector2 _refVelocity;
 
-    void Update()
+    private void Update()
     {
-        transform.position = Vector2.SmoothDamp(transform.position, cursorPos.position, ref refVelocity, 0.1f);
+        transform.position = Vector2.SmoothDamp(transform.position, cursorPos.position, ref _refVelocity, 0.1f);
     }
 }

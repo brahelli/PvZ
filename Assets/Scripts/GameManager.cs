@@ -8,9 +8,9 @@ using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] Transform[] zombieSpawns;
+    [SerializeField] private Transform[] zombieSpawns;
 
-    [SerializeField] TMP_Text sunDisp;
+    [SerializeField] private TMP_Text sunDisp;
 
     public float sun = 0;
 
@@ -23,6 +23,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        sunDisp.text = "Sun: " + sun.ToString();
+        sunDisp.text = "Sun: " + sun;
     }
 }

@@ -4,28 +4,28 @@ using UnityEngine.EventSystems;
 public class Selector : MonoBehaviour
 {
     public bool plantSpawned = false;
-    PlantController plantController;
+    private PlantController _plantController;
 
-    SpriteRenderer spriteRenderer;
+    private SpriteRenderer _spriteRenderer;
 
-    [SerializeField] int v;
-    [SerializeField] int h;
+    [SerializeField] private int v;
+    [SerializeField] private int h;
 
-    BoxCollider2D col;
+    private BoxCollider2D _col;
 
-    string plantType;
+    private string _plantType;
 
     private void Start()
     {
-        plantController = GameObject.FindGameObjectWithTag("PlantControl").gameObject.GetComponent<PlantController>();
-        col = gameObject.GetComponent<BoxCollider2D>();
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        _plantController = GameObject.FindGameObjectWithTag("PlantControl").gameObject.GetComponent<PlantController>();
+        _col = gameObject.GetComponent<BoxCollider2D>();
+        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     public void Spawn()
     {
-        plantController.SpawnPlants(h, v, plantType);
-        plantController.EndSpawn();
+        _plantController.SpawnPlants(h, v, _plantType);
+        _plantController.EndSpawn();
         plantSpawned = true;
     }
 
@@ -33,16 +33,16 @@ public class Selector : MonoBehaviour
     {
         if (!plantSpawned)
         {
-            col.enabled = true;
-            spriteRenderer.enabled = true;
-            plantType = plantTypeToSpawn;
+            _col.enabled = true;
+            _spriteRenderer.enabled = true;
+            _plantType = plantTypeToSpawn;
         }
     }
 
     public void DisableSpawningHere()
     {
-        col.enabled = false;
-        spriteRenderer.enabled = false;
-        plantType = null;
+        _col.enabled = false;
+        _spriteRenderer.enabled = false;
+        _plantType = null;
     }
 }

@@ -4,25 +4,25 @@ public class BasicShot : MonoBehaviour
 {
     [SerializeField] private GameObject bullet;
 
-    [SerializeField] bool detectEnemy;
+    [SerializeField] private bool detectEnemy;
 
     public float fireCooldown = 1;
-    float countdown = 0f;
-    bool canFire = false;
+    private float _countdown = 0f;
+    private bool _canFire = false;
 
     private void Update()
     {
-        if (Time.time > countdown)
+        if (Time.time > _countdown)
         {
-            canFire = true;
-            countdown = Time.time + fireCooldown;
+            _canFire = true;
+            _countdown = Time.time + fireCooldown;
         }
         else
         {
-            canFire = false;
+            _canFire = false;
         }
 
-        if (detectEnemy && canFire)
+        if (detectEnemy && _canFire)
         {
             Instantiate(bullet, transform.position, Quaternion.identity);
         }

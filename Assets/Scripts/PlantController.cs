@@ -2,29 +2,29 @@ using UnityEngine;
 
 public class PlantController : MonoBehaviour
 {
-    [SerializeField] Vector2[] raycastOrigins;
-    [SerializeField] PlantRow plantRowOne;
-    [SerializeField] PlantRow plantRowTwo;
-    [SerializeField] PlantRow plantRowThree;
-    [SerializeField] PlantRow plantRowFour;
-    [SerializeField] PlantRow plantRowFive;
+    [SerializeField] private Vector2[] raycastOrigins;
+    [SerializeField] private PlantRow plantRowOne;
+    [SerializeField] private PlantRow plantRowTwo;
+    [SerializeField] private PlantRow plantRowThree;
+    [SerializeField] private PlantRow plantRowFour;
+    [SerializeField] private PlantRow plantRowFive;
 
-    [SerializeField] LayerMask zombies;
+    [SerializeField] private LayerMask zombies;
 
-    [SerializeField] GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
 
     private void Update()
     {
         CheckForZombies();
     }
 
-    void CheckForZombies()
+    private void CheckForZombies()
     {
         for (int i = 0; i < raycastOrigins.Length; i++)
         {
             RaycastHit2D hit = Physics2D.Raycast(raycastOrigins[i], Vector2.left, zombies);
 
-            if (hit.collider != null && hit.collider.tag == "Zombie")
+            if (hit.collider && hit.collider.CompareTag("Zombie"))
             {
                 switch (i)
                 {
@@ -73,29 +73,27 @@ public class PlantController : MonoBehaviour
         }
     }
 
-    public void StartSpawn(string plantType, int sunCost)
+    private void StartSpawn(string plantType, int sunCost)
     {
-        if (gameManager.sun >= sunCost)
+        if (!(gameManager.sun >= sunCost)) return;
+        GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
+
+        foreach (var t in selectors)
         {
-            GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
-
-            for (int i = 0; i < selectors.Length; i++)
-            {
-                Selector selector = selectors[i].GetComponent<Selector>();
-                selector.EnableSpawningHere(plantType);
-            }
-
-            gameManager.sun -= sunCost;
+            Selector selector = t.GetComponent<Selector>();
+            selector.EnableSpawningHere(plantType);
         }
+
+        gameManager.sun -= sunCost;
     }
 
     public void EndSpawn()
     {
         GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
 
-        for (int i = 0; i < selectors.Length; i++)
+        foreach (var t in selectors)
         {
-            Selector selector = selectors[i].GetComponent<Selector>();
+            Selector selector = t.GetComponent<Selector>();
             selector.DisableSpawningHere();
         }
     }
