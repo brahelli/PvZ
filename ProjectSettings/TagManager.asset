@@ -12,6 +12,7 @@ TagManager:
   - Selector
   - PlantControl
   - Sun
+  - Packet
   layers:
   - Default
   - TransparentFX

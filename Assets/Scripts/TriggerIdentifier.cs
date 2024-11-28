@@ -16,6 +16,9 @@ public class TriggerIdentifier : MonoBehaviour
             case "Selector" when player.click:
                 collision.gameObject.GetComponent<Selector>().Spawn();
                 break;
+            case "Packet" when player.click:
+                collision.gameObject.GetComponent<Packet>().Activate();
+                break;
         }
     }
 }
