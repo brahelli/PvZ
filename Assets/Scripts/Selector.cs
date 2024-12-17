@@ -1,9 +1,8 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class Selector : MonoBehaviour
 {
-    public bool plantSpawned = false;
+    public bool plantSpawned;
     private PlantController _plantController;
 
     private SpriteRenderer _spriteRenderer;
@@ -17,7 +16,7 @@ public class Selector : MonoBehaviour
 
     private void Start()
     {
-        _plantController = GameObject.FindGameObjectWithTag("PlantControl").gameObject.GetComponent<PlantController>();
+        _plantController = transform.parent.GetComponent<PlantRow>().plantController;
         _col = gameObject.GetComponent<BoxCollider2D>();
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
@@ -31,12 +30,10 @@ public class Selector : MonoBehaviour
 
     public void EnableSpawningHere(string plantTypeToSpawn)
     {
-        if (!plantSpawned)
-        {
-            _col.enabled = true;
-            _spriteRenderer.enabled = true;
-            _plantType = plantTypeToSpawn;
-        }
+        if (plantSpawned) return;
+        _col.enabled = true;
+        _spriteRenderer.enabled = true;
+        _plantType = plantTypeToSpawn;
     }
 
     public void DisableSpawningHere()

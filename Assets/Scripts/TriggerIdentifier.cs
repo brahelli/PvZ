@@ -6,8 +6,6 @@ public class TriggerIdentifier : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log(player.click);
-        Debug.Log(collision.name);
         switch (collision.tag)
         {
             case "Sun":

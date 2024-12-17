@@ -12,8 +12,8 @@ public class PlantController : MonoBehaviour
     [SerializeField] private LayerMask zombies;
 
     [SerializeField] private GameManager gameManager;
-    
-    bool _isSpawning;
+
+    private bool _isSpawning;
     
     //Initialise and assign variables
 

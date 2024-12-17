@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -20,7 +19,7 @@ public class Plant : MonoBehaviour
     public float projectileDamage = 1f;
     public float projectileSpeed = 2f;
 
-    [SerializeField] private Transform parent;
+    private Transform parent;
     
     //Initialise and assign variables
 
@@ -28,6 +27,7 @@ public class Plant : MonoBehaviour
     {
         _plantSprite = this.gameObject.GetComponent<SpriteRenderer>();
         //Get the SpriteRenderer component of this plant
+        parent = transform.parent.transform;
     }
 
     private void Update()

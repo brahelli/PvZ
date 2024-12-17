@@ -4,6 +4,9 @@ public class PlantRow : MonoBehaviour
 {
     [SerializeField] private Plant[] plants;
     // ^ an array of Plant objects
+    
+    [SerializeField] public PlantController plantController;
+    // ^ a reference to the PlantController object for Selector objects to access
 
     public void Spawn(int plant, string plantType)
     {
