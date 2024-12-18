@@ -1,10 +1,6 @@
-using System;
-using System.Collections;
-// ^ for coroutines
 using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
-using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,7 +8,13 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TMP_Text sunDisp;
 
-    public float sun = 0;
+    public float sun;
+    
+    [SerializeField] private GameObject[] lanes;
+
+    private PlayerInputManager _pim;
+
+    private int _noOfPlayers;
     
     //Initialise and assign variables
 
@@ -27,10 +29,23 @@ public class GameManager : MonoBehaviour
         Cursor.visible = false;
         //Hide the cursor
     }
+    
+    private void Start()
+    {
+        _pim = GetComponent<PlayerInputManager>();
+
+        _noOfPlayers = _pim.playerCount;
+
+    }
 
     private void Update()
     {
         sunDisp.text = "Sun: " + sun;
         //Update the sun display text to show the current amount of sun to the user
+    }
+    
+    public void PlayerJoined()
+    {
+        lanes[_noOfPlayers].SetActive(true);
     }
 }

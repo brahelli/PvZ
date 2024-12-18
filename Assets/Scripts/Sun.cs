@@ -8,7 +8,7 @@ public class Sun : MonoBehaviour
 
     private bool _collected = false;
 
-    private readonly Vector2 _collectedMoveTo = new Vector2(10.78f, 7.55f);
+    private readonly Vector2 _collectedMoveTo = new Vector2(108f, 54f);
     private Vector2 _otherMoveTo;
 
     private Vector2 _collectedRef;
@@ -18,6 +18,8 @@ public class Sun : MonoBehaviour
     private GameManager _gm;
 
     public bool spawnedBySunflower = false;
+
+    [SerializeField] private GameObject _collectExplode;
 
     private void Start()
     {
@@ -40,28 +42,14 @@ public class Sun : MonoBehaviour
         {
             transform.position = Vector2.SmoothDamp(_rb.position, _otherMoveTo, ref _otherRef, .75f);
         }
-
-        if (_collected)
-        {
-            transform.position = Vector2.SmoothDamp(_rb.position, _collectedMoveTo, ref _collectedRef, .75f);
-        }
     }
 
     public void Collect()
     {
-        if (!_collected)
-        {
-            _gm.sun += 25;
-            _collected = true;
-            Destroy(gameObject, 3f);
-        }
+        if (_collected) return;
+        _gm.sun += 25;
+        _collected = true;
+        _collectExplode.SetActive(true);
+        Destroy(gameObject, .3f);
     }
-
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Player")
-        {
-            Collect();
-        }
-    }*/
 }
