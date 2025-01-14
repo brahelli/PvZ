@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Sun : MonoBehaviour
 {
@@ -6,9 +7,12 @@ public class Sun : MonoBehaviour
 
     private float _yToFall;
 
-    private bool _collected = false;
+    private bool _collected;
+    private Vector2 _refCollectedScale;
+    private Vector2 _refCollectedScaleSparks;
+    private Vector2 _refCollectedScaleTrail;
+    private float _refCollectedIntensitySunLight;
 
-    private readonly Vector2 _collectedMoveTo = new Vector2(108f, 54f);
     private Vector2 _otherMoveTo;
 
     private Vector2 _collectedRef;
@@ -17,9 +21,12 @@ public class Sun : MonoBehaviour
 
     private GameManager _gm;
 
-    public bool spawnedBySunflower = false;
+    public bool spawnedBySunflower;
 
-    [SerializeField] private GameObject _collectExplode;
+    [SerializeField] private GameObject collectExplode;
+    [SerializeField] private Transform sparks;
+    [SerializeField] private Transform trail;
+    [SerializeField] private Light2D sunLight;
 
     private void Start()
     {
@@ -42,6 +49,14 @@ public class Sun : MonoBehaviour
         {
             transform.position = Vector2.SmoothDamp(_rb.position, _otherMoveTo, ref _otherRef, .75f);
         }
+
+        if (_collected)
+        {
+            transform.localScale = Vector2.SmoothDamp(transform.localScale, Vector2.zero, ref _refCollectedScale, .3f);
+            sparks.localScale = Vector2.SmoothDamp(sparks.transform.localScale, Vector2.zero, ref _refCollectedScaleSparks, .3f);
+            trail.localScale = Vector2.SmoothDamp(trail.transform.localScale, Vector2.zero, ref _refCollectedScaleTrail, .3f);
+            sunLight.intensity = Mathf.SmoothDamp(sunLight.intensity, 0, ref _refCollectedIntensitySunLight, .3f);
+        }
     }
 
     public void Collect()
@@ -49,7 +64,7 @@ public class Sun : MonoBehaviour
         if (_collected) return;
         _gm.sun += 25;
         _collected = true;
-        _collectExplode.SetActive(true);
-        Destroy(gameObject, .3f);
+        Instantiate(collectExplode, transform.position, Quaternion.identity);
+        Destroy(gameObject, 5f);
     }
 }
