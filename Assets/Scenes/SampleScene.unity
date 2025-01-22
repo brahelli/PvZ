@@ -938,8 +938,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -2325,8 +2325,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -3098,8 +3098,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -3276,8 +3276,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -3749,8 +3749,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -3979,8 +3979,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -4270,8 +4270,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -4448,8 +4448,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -5603,8 +5603,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -6211,8 +6211,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -6389,8 +6389,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -6567,8 +6567,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -6745,8 +6745,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -7262,8 +7262,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -7440,8 +7440,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -8504,8 +8504,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -8712,8 +8712,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -8890,8 +8890,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -9755,8 +9755,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -10281,8 +10281,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -10459,8 +10459,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -10811,8 +10811,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -11850,8 +11850,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -12367,8 +12367,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -12893,8 +12893,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -13002,8 +13002,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -14612,8 +14612,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -14790,8 +14790,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -14968,8 +14968,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -15335,8 +15335,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -15790,8 +15790,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -15968,8 +15968,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -16320,8 +16320,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -16498,8 +16498,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -17015,8 +17015,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -17193,8 +17193,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -18154,8 +18154,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -19088,8 +19088,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -19852,8 +19852,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -20378,8 +20378,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -20556,8 +20556,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -21256,8 +21256,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -21434,8 +21434,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -21646,8 +21646,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 1, g: 0.06132078, b: 0.06132078, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fc6b89ceaf95b3c4983480f5de5d0469, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21744,8 +21744,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -22852,8 +22852,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -23030,8 +23030,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -24051,8 +24051,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -24229,8 +24229,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -25311,8 +25311,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -25437,8 +25437,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -26128,8 +26128,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -26306,8 +26306,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -26649,8 +26649,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -26827,8 +26827,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -27673,8 +27673,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -28016,8 +28016,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -28194,8 +28194,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -29048,8 +29048,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -29226,8 +29226,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -29674,8 +29674,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -30576,8 +30576,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -31267,8 +31267,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -31619,8 +31619,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -32475,8 +32475,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -33349,8 +33349,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -33804,8 +33804,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -34883,8 +34883,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -35287,8 +35287,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -35413,8 +35413,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -35939,8 +35939,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -36117,8 +36117,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -36295,8 +36295,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -36473,8 +36473,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -36651,8 +36651,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -37973,8 +37973,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -38099,8 +38099,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -38863,8 +38863,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -78284,8 +78284,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -79292,8 +79292,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -80304,8 +80304,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 1, g: 0.06132078, b: 0.06132078, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fc6b89ceaf95b3c4983480f5de5d0469, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -80645,8 +80645,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -80988,8 +80988,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -81166,8 +81166,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -81518,8 +81518,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -82140,8 +82140,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -82735,8 +82735,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -83252,8 +83252,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -83709,8 +83709,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -83956,8 +83956,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -84134,8 +84134,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -84228,8 +84228,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -84490,8 +84490,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -84702,8 +84702,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 1, g: 0.06132078, b: 0.06132078, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fc6b89ceaf95b3c4983480f5de5d0469, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -84869,8 +84869,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -85551,8 +85551,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -85729,8 +85729,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -86081,8 +86081,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -86680,8 +86680,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -86858,8 +86858,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -87367,8 +87367,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -87562,8 +87562,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -87792,8 +87792,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -88092,8 +88092,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -88375,8 +88375,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -88553,8 +88553,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -88852,8 +88852,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -88978,8 +88978,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -89156,8 +89156,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -89334,8 +89334,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -89512,8 +89512,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -90689,8 +90689,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -90919,8 +90919,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -91540,8 +91540,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -92066,8 +92066,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -92418,8 +92418,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -92692,8 +92692,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -92939,8 +92939,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -93360,8 +93360,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -93538,8 +93538,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -93647,8 +93647,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -93894,8 +93894,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
@@ -94637,8 +94637,8 @@ MonoBehaviour:
   - {fileID: 3312146617061354205, guid: 36925f324fedce945bdd9faf23e164f2, type: 3}
   - {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
   availableSprites:
-  - {fileID: -2413806693520163455, guid: 0e51115ef4d864441bef5614d1b938f2, type: 3}
-  - {fileID: 7482667652216324306, guid: acc198d5f72fee546a9888b67db9528c, type: 3}
+  - {fileID: 21300000, guid: c0c1844783925c04d89bc0899b911755, type: 3}
+  - {fileID: 21300000, guid: 52c878059e29f3e4cb2e74abdf82ee1d, type: 3}
   detectEnemy: 0
   fireCooldown: 2
   projectileDamage: 1
