@@ -19,7 +19,9 @@ public class Plant : MonoBehaviour
     public float projectileDamage = 1f;
     public float projectileSpeed = 2f;
 
-    private Transform parent;
+    private Transform _parent;
+
+    private string _plantType;
     
     //Initialise and assign variables
 
@@ -27,7 +29,7 @@ public class Plant : MonoBehaviour
     {
         _plantSprite = this.gameObject.GetComponent<SpriteRenderer>();
         //Get the SpriteRenderer component of this plant
-        parent = transform.parent.transform;
+        _parent = transform.parent.transform;
     }
 
     private void Update()
@@ -38,19 +40,18 @@ public class Plant : MonoBehaviour
         FireCheck();
         //Check if the plant can fire a projectile
 
-        if (!detectEnemy || !_canFire) return;
-        //If the plant cannot detect an enemy or cannot fire a projectile, return and do nothing
+        GameObject bullet = null;
         
-        GameObject bullet = Instantiate(_bulletGo, transform.position + new Vector3(0, Random.Range(-.4f, .4f), 0), Quaternion.identity);
-        //Instantiate a new bullet at the plant's position with a slight random offset on the y-axis
+        if(_canFire && (detectEnemy || _plantType == "Sunflower")) {bullet = Instantiate(_bulletGo, transform.position + new Vector3(0, Random.Range(-.4f, .4f), 0), Quaternion.identity);}
         
-        if (bullet.GetComponent<Bullet>() is not null)
+        if (_plantType == "Peashooter" && bullet)
         {
             //If the bullet spawned is a Bullet, set the projectile damage and speed
-            bullet.GetComponent<Bullet>().projectileDamage = projectileDamage;
-            bullet.GetComponent<Bullet>().projectileSpeed = projectileSpeed;
+            Bullet bulletComp = bullet.GetComponent<Bullet>();
+            bulletComp.projectileDamage = projectileDamage;
+            bulletComp.projectileSpeed = projectileSpeed;
         }
-        else if (bullet.GetComponent<Sun>() is not null)
+        else if (_plantType == "Sunflower" && bullet)
         {
             //If the bullet spawned is a Sun, set the sun to be spawned by a sunflower instead
             bullet.GetComponent<Sun>().spawnedBySunflower = true;
@@ -59,7 +60,7 @@ public class Plant : MonoBehaviour
 
     private void FireCheck()
     {
-        detectEnemy = parent.CompareTag("ZombieDetected");
+        detectEnemy = _parent.CompareTag("ZombieDetected");
         //Check if the parent object is a zombie, and set detectEnemy to true if it is
 
         if (Time.time > _countdown)
@@ -78,6 +79,8 @@ public class Plant : MonoBehaviour
 
     public void SetType(string type)
     {
+        
+        _plantType = type;
         switch (type)
         {
             //Depending on the type of plant, set the bullet and sprite to the correct ones
