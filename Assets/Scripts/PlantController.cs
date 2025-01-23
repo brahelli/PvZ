@@ -14,6 +14,8 @@ public class PlantController : MonoBehaviour
     [SerializeField] private GameManager gameManager;
 
     private bool _isSpawning;
+
+    public int player;
     
     //Initialise and assign variables
 

@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     public float projectileSpeed = 2f;
     public float projectileDamage = 1f;
 
+    public Vector2 moveDirection;
     
     //Initialise and assign variables
     private void Start()
@@ -18,7 +19,7 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
-        _rb.MovePosition(_rb.position + Vector2.right * (projectileSpeed * Time.deltaTime));
+        _rb.MovePosition(_rb.position + moveDirection * (projectileSpeed * Time.deltaTime));
         //Move the bullet to the right at a speed of projectileSpeed multiplied by Time.deltaTime to keep the bullet moving at a consistent speed across frames
     }
 

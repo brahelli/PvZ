@@ -8,7 +8,7 @@ public class Packet : MonoBehaviour
     
     //Initialise and assign variables
 
-    public void PlayerJoined()
+    private void Start()
     {
         _plantControllers = FindObjectsOfType<PlantController>();
     }

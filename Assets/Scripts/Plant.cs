@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -18,13 +19,22 @@ public class Plant : MonoBehaviour
 
     public float projectileDamage = 1f;
     public float projectileSpeed = 2f;
+    private Vector2 _bulletMoveDirection;
 
     private Transform _parent;
+    private PlantController _parentPlantController;
 
     private string _plantType;
     
+    Quaternion right = Quaternion.LookRotation(Vector3.right);
+    
     //Initialise and assign variables
 
+    private void Awake()
+    {
+        _parentPlantController = transform.parent.transform.parent.GetComponent<PlantController>();
+    }
+    
     private void Start()
     {
         _plantSprite = this.gameObject.GetComponent<SpriteRenderer>();
@@ -50,6 +60,7 @@ public class Plant : MonoBehaviour
             Bullet bulletComp = bullet.GetComponent<Bullet>();
             bulletComp.projectileDamage = projectileDamage;
             bulletComp.projectileSpeed = projectileSpeed;
+            bulletComp.moveDirection = _bulletMoveDirection;
         }
         else if (_plantType == "Sunflower" && bullet)
         {
@@ -79,8 +90,8 @@ public class Plant : MonoBehaviour
 
     public void SetType(string type)
     {
-        
         _plantType = type;
+        
         switch (type)
         {
             //Depending on the type of plant, set the bullet and sprite to the correct ones
@@ -91,6 +102,30 @@ public class Plant : MonoBehaviour
             case "Sunflower":
                 _bulletGo = availableProjectiles[1];
                 _sprite = availableSprites[1];
+                break;
+        }
+
+        switch (_parentPlantController.player)
+        {
+            case 1:
+                _plantSprite.flipX = false;
+                transform.Rotate(0,0,0);
+                _bulletMoveDirection = Vector2.right;
+                break;
+            case 2:
+                _plantSprite.flipX = true;
+                transform.Rotate(0,0,0);
+                _bulletMoveDirection = Vector2.left;
+                break;
+            case 3:
+                _plantSprite.flipX = true;
+                transform.Rotate(0,0,90);
+                _bulletMoveDirection = Vector2.down;
+                break;
+            case 4:
+                _plantSprite.flipX = false;
+                transform.Rotate(0,0, 90);
+                _bulletMoveDirection = Vector2.up;
                 break;
         }
     }
