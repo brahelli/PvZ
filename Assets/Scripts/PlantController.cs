@@ -27,7 +27,7 @@ public class PlantController : MonoBehaviour
     {
         for (int i = 0; i < raycastOrigins.Length; i++)
         {
-            RaycastHit2D hit = Physics2D.Raycast(raycastOrigins[i], Vector2.left, zombies);
+            RaycastHit2D hit = Physics2D.Raycast(raycastOrigins[i], Vector2.left, 100f, zombies);
             //For every raycast origin, check if there is a zombie in the way
 
             if (hit.collider && hit.collider.CompareTag("Zombie"))
