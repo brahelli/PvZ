@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "NewPlant",
+                    "type": "Button",
+                    "id": "8a89e5e3-5675-4f46-8632-4ef2694f7c6a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -63,17 +72,6 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Touch",
-                    "action": "CursorPosition",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b7d98ee9-1db8-4843-ae7f-15fa48ddc444",
-                    "path": "<Gamepad>/dpad",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Controller",
                     "action": "CursorPosition",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -187,6 +185,28 @@
                     "action": "CursorGridSnap",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "5a8b562b-49c3-4a4b-9e4e-53ba8c8d252d",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "K&M",
+                    "action": "NewPlant",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "de3104e3-e782-43ef-8301-cae808790ba5",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller",
+                    "action": "NewPlant",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

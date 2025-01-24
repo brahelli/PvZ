@@ -1,5 +1,7 @@
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 public class Player : MonoBehaviour
 {
@@ -24,6 +26,8 @@ public class Player : MonoBehaviour
     private float _r, _g, _b;
 
     private RaycastHit2D _hit;
+
+    [SerializeField] private GameObject packets;
     
     //Initialise and assign variables
 
@@ -52,6 +56,11 @@ public class Player : MonoBehaviour
         }
         _free = false;
         //Set free to false
+    }
+
+    public void OnNewPlant(InputAction.CallbackContext context)
+    {
+        Instantiate(packets, transform.position, quaternion.identity);
     }
 
     private void Start()
