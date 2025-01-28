@@ -33,12 +33,12 @@ public class Plant : MonoBehaviour
     private void Awake()
     {
         _parentPlantController = transform.parent.transform.parent.GetComponent<PlantController>();
+        _plantSprite = GetComponent<SpriteRenderer>();
+        //Get the SpriteRenderer component of this plant
     }
     
     private void Start()
     {
-        _plantSprite = this.gameObject.GetComponent<SpriteRenderer>();
-        //Get the SpriteRenderer component of this plant
         _parent = transform.parent.transform;
     }
 

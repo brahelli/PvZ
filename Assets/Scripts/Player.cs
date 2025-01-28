@@ -60,7 +60,13 @@ public class Player : MonoBehaviour
 
     public void OnNewPlant(InputAction.CallbackContext context)
     {
-        Instantiate(packets, transform.position, quaternion.identity);
+        bool clicked = false;
+
+        if (!clicked && context.performed)
+        {
+            Instantiate(packets, p1Cursor.position, quaternion.identity);
+            clicked = true;
+        }
     }
 
     private void Start()

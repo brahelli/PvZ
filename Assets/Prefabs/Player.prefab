@@ -90,6 +90,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1860380564605355967}
+        m_TargetAssemblyTypeName: TriggerIdentifier, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 2b357a61-7066-42b6-84d5-2b36b29a9f5c
     m_ActionName: TD/CursorActivate[/Mouse/leftButton]
   - m_PersistentCalls:
