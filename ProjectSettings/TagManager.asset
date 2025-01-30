@@ -13,6 +13,7 @@ TagManager:
   - PlantControl
   - Sun
   - Packet
+  - PacketClose
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - Sun
   - Selector
   - Cursor
-  - 
+  - PacketClose
   - 
   - 
   - 

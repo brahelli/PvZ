@@ -20,6 +20,10 @@ public class TriggerIdentifier : MonoBehaviour
                 collision.gameObject.GetComponent<Packet>().Activate();
                 _clicked = true;
                 break;
+            case "PacketClose" when player.click && !_clicked:
+                collision.gameObject.GetComponent<PacketClose>().Close();
+                _clicked = true;
+                break;
         }
     }
 

@@ -26,8 +26,6 @@ public class Plant : MonoBehaviour
 
     private string _plantType;
     
-    Quaternion right = Quaternion.LookRotation(Vector3.right);
-    
     //Initialise and assign variables
 
     private void Awake()
