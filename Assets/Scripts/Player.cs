@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
     private RaycastHit2D _hit;
 
     [SerializeField] private GameObject packets;
+
+    [SerializeField] private Camera cam;
     
     //Initialise and assign variables
 
@@ -86,7 +88,9 @@ public class Player : MonoBehaviour
         
         cursor.pi = _pi;
         //Set the PlayerInput component of the cursor to this object's PlayerInput component
-        
+
+        cam = _pi.camera;
+
     }
 
     private void Update()
@@ -103,7 +107,7 @@ public class Player : MonoBehaviour
                     break;
                 case "K&M":
                 case "Touch":
-                    p1Cursor.position = Camera.main.ScreenToWorldPoint(_cursorPos);
+                    p1Cursor.position = cam.ScreenToWorldPoint(_cursorPos);
                     p1Cursor.position = new Vector3(p1Cursor.position.x, p1Cursor.position.y, 0);
                     //Get the position of where the user touched the screen, change it to world space, and move the cursor to that position
                     break;
