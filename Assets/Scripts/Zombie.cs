@@ -8,9 +8,12 @@ public class Zombie : MonoBehaviour
 
     private Rigidbody2D _rb;
 
+    private Animator _anim;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -28,6 +31,7 @@ public class Zombie : MonoBehaviour
     private void Die()
     {
         moveSpeed = 0;
+        _anim.SetTrigger("Die");
         Destroy(gameObject, 1f);
     }
 }
