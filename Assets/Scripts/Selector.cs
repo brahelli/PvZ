@@ -28,9 +28,9 @@ public class Selector : MonoBehaviour
         plantSpawned = true;
     }
 
-    public void EnableSpawningHere(string plantTypeToSpawn)
+    public void EnableSpawningHere(string plantTypeToSpawn, int player)
     {
-        if (plantSpawned) return;
+        if (plantSpawned || transform.parent.transform.parent.GetComponent<PlantController>().player - 1 != player) return;
         _col.enabled = true;
         _spriteRenderer.enabled = true;
         _plantType = plantTypeToSpawn;

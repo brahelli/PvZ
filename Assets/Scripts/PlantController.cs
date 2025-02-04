@@ -79,7 +79,7 @@ public class PlantController : MonoBehaviour
         }
     }
 
-    private void StartSpawn(string plantType, int sunCost)
+    private void StartSpawn(string plantType, int sunCost, int player)
     {
         //If the player does not have enough sun, return and do nothing
         if (!(gameManager.sun >= sunCost)) return;
@@ -94,10 +94,10 @@ public class PlantController : MonoBehaviour
         //Set the isSpawning variable to true
 
         GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
-        foreach (var t in selectors)
+        foreach (GameObject t in selectors)
         {
             Selector selector = t.GetComponent<Selector>();
-            selector.EnableSpawningHere(plantType);
+            selector.EnableSpawningHere(plantType, player);
             //Enable spawning on every selector
         }
 
@@ -145,16 +145,16 @@ public class PlantController : MonoBehaviour
         }
     }
 
-    public void PlantType(string plantType)
+    public void PlantType(string plantType, int player)
     {
         switch (plantType)
         {
             //Depending on the type of plant, start the spawn process with the correct sun cost
             case "Peashooter":
-                StartSpawn(plantType, 100);
+                StartSpawn(plantType, 100, player);
                 break;
             case "Sunflower":
-                StartSpawn(plantType, 25);
+                StartSpawn(plantType, 25, player);
                 break;
         }
     }

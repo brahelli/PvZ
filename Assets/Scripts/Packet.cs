@@ -13,9 +13,9 @@ public class Packet : MonoBehaviour
         _plantControllers = FindObjectsOfType<PlantController>();
     }
 
-    public void Activate()
+    public void Activate(int player)
     {
-        _plantControllers[0].PlantType(plantType);
+        _plantControllers[player].PlantType(plantType, player);
         //When the user clicks on this packet, begin the process of spawning a plant
         Destroy(transform.parent.gameObject, .3f);
 

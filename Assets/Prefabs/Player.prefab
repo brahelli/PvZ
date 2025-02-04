@@ -160,6 +160,7 @@ MonoBehaviour:
   trail: {fileID: 3446720041294920949}
   packets: {fileID: 3783869646612672854, guid: ef1b7940635490648bb3a5c10ce79066, type: 3}
   cam: {fileID: 0}
+  plIndex: 0
 --- !u!1 &2661313139622134275
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +624,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4400481594183407362}
   - component: {fileID: 4305726837605904100}
-  - component: {fileID: 5713303832271040316}
   - component: {fileID: 1948815628025672310}
   m_Layer: 0
   m_Name: Camera
@@ -698,14 +698,6 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &5713303832271040316
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7675434715327390272}
-  m_Enabled: 1
 --- !u!114 &1948815628025672310
 MonoBehaviour:
   m_ObjectHideFlags: 0

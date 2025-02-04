@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject packets;
 
     [SerializeField] private Camera cam;
+
+    public int plIndex;
     
     //Initialise and assign variables
 
@@ -90,6 +92,8 @@ public class Player : MonoBehaviour
         //Set the PlayerInput component of the cursor to this object's PlayerInput component
 
         cam = _pi.camera;
+
+        plIndex = _pi.playerIndex;
 
     }
 
