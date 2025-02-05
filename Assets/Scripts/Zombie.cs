@@ -32,6 +32,6 @@ public class Zombie : MonoBehaviour
     {
         moveSpeed = 0;
         _anim.SetTrigger("Die");
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 1.3f);
     }
 }
