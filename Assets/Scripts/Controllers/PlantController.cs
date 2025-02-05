@@ -103,6 +103,17 @@ public class PlantController : MonoBehaviour
 
     }
 
+    /*private void StartDespawn()
+    {
+        GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
+        foreach (GameObject t in selectors)
+        {
+            Selector selector = t.GetComponent<Selector>();
+            selector.EnableSpawningHere(plantType, player);
+            //Enable spawning on every selector
+        }
+    }*/
+
     public void EndSpawn()
     {
         GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
