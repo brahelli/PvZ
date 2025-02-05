@@ -144,6 +144,34 @@ public class PlantController : MonoBehaviour
                 break;
         }
     }
+    
+    public void DeSpawnPlants(int plantPosH, int plantPosV)
+    {
+        //Depending on the vertical position of the plant, spawn the plant in the correct row
+        switch (plantPosV)
+        {
+            case 0:
+                plantRowOne.Despawn(plantPosH);
+                //Spawn the plant in the first row with the correct type of plant
+                break;
+            case 1:
+                plantRowTwo.Despawn(plantPosH);
+                //Spawn the plant in the second row with the correct type of plant
+                break;
+            case 2:
+                plantRowThree.Despawn(plantPosH);
+                //Spawn the plant in the third row with the correct type of plant
+                break;
+            case 3:
+                plantRowFour.Despawn(plantPosH);
+                //Spawn the plant in the fourth row with the correct type of plant
+                break;
+            case 4:
+                plantRowFive.Despawn(plantPosH);
+                //Spawn the plant in the fifth row with the correct type of plant
+                break;
+        }
+    }
 
     public void PlantType(string plantType, int player)
     {

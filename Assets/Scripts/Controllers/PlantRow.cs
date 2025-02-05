@@ -17,4 +17,11 @@ public class PlantRow : MonoBehaviour
         currentPlant.SetType(plantType);
         //Set the plant to the right type
     }
+    
+    public void Despawn(int plant)
+    {
+        Plant currentPlant = plants[plant];
+        currentPlant.gameObject.SetActive(false);
+        //Deactivate the plant at the specified position
+    }
 }
