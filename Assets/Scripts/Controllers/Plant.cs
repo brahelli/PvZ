@@ -25,6 +25,8 @@ public class Plant : MonoBehaviour
     private PlantController _parentPlantController;
 
     private string _plantType;
+
+    [SerializeField] private GameObject plantExplosion;
     
     //Initialise and assign variables
 
@@ -89,6 +91,8 @@ public class Plant : MonoBehaviour
     public void SetType(string type)
     {
         _plantType = type;
+        
+        Instantiate(plantExplosion, transform.position, Quaternion.identity);
         
         switch (type)
         {
