@@ -79,7 +79,7 @@ public class PlantController : MonoBehaviour
         }
     }
 
-    private void StartSpawn(string plantType, int sunCost, int player)
+    private void StartSpawn(string plantType, int sunCost, int playerS)
     {
         //If the player does not have enough sun, return and do nothing
         if (!(gameManager.sun >= sunCost)) return;
@@ -97,10 +97,23 @@ public class PlantController : MonoBehaviour
         foreach (GameObject t in selectors)
         {
             Selector selector = t.GetComponent<Selector>();
-            selector.EnableSpawningHere(plantType, player);
+            selector.EnableSpawningHere(plantType, playerS);
             //Enable spawning on every selector
         }
 
+    }
+
+    public void StartDespawn(int playerS)
+    {
+        Debug.Log("Start Despawn");
+        
+        GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
+        foreach (GameObject t in selectors)
+        {
+            Selector selector = t.GetComponent<Selector>();
+            selector.EnableSpawningHere("despawn", playerS);
+            //Enable spawning on every selector
+        }
     }
 
     public void EndSpawn()
@@ -144,17 +157,45 @@ public class PlantController : MonoBehaviour
                 break;
         }
     }
+    
+    public void DeSpawnPlants(int plantPosH, int plantPosV)
+    {
+        //Depending on the vertical position of the plant, spawn the plant in the correct row
+        switch (plantPosV)
+        {
+            case 0:
+                plantRowOne.Despawn(plantPosH);
+                //Spawn the plant in the first row with the correct type of plant
+                break;
+            case 1:
+                plantRowTwo.Despawn(plantPosH);
+                //Spawn the plant in the second row with the correct type of plant
+                break;
+            case 2:
+                plantRowThree.Despawn(plantPosH);
+                //Spawn the plant in the third row with the correct type of plant
+                break;
+            case 3:
+                plantRowFour.Despawn(plantPosH);
+                //Spawn the plant in the fourth row with the correct type of plant
+                break;
+            case 4:
+                plantRowFive.Despawn(plantPosH);
+                //Spawn the plant in the fifth row with the correct type of plant
+                break;
+        }
+    }
 
-    public void PlantType(string plantType, int player)
+    public void PlantType(string plantType, int playerS)
     {
         switch (plantType)
         {
             //Depending on the type of plant, start the spawn process with the correct sun cost
             case "Peashooter":
-                StartSpawn(plantType, 100, player);
+                StartSpawn(plantType, 100, playerS);
                 break;
             case "Sunflower":
-                StartSpawn(plantType, 25, player);
+                StartSpawn(plantType, 25, playerS);
                 break;
         }
     }
