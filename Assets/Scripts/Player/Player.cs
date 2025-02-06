@@ -32,6 +32,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Camera cam;
 
     public int plIndex;
+
+    public bool packetsSpawned;
     
     //Initialise and assign variables
 
@@ -66,9 +68,13 @@ public class Player : MonoBehaviour
     {
         bool clicked = false;
 
-        if (!clicked && context.performed)
+        if (!clicked && context.performed && !packetsSpawned)
         {
-            Instantiate(packets, p1Cursor.position, quaternion.identity);
+            PassThroughToPacket packetsP = Instantiate(packets, p1Cursor.position, quaternion.identity).GetComponent<PassThroughToPacket>();
+
+            packetsP.player = this;
+            packetsSpawned = true;
+            
             clicked = true;
         }
     }
