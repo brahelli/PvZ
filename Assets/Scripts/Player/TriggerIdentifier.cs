@@ -15,11 +15,14 @@ public class TriggerIdentifier : MonoBehaviour
                 collision.gameObject.GetComponent<Sun>().Collect();
                 break;
             case "Selector" when player.click && !_clicked:
-                collision.gameObject.GetComponent<Selector>().Spawn();
-                _clicked = true;
-                break;
-            case "Selector" when player.click && !_clicked && _despawn:
-                collision.gameObject.GetComponent<Selector>().Despawn();
+                if (!_despawn)
+                {
+                    collision.gameObject.GetComponent<Selector>().Spawn();
+                }
+                else
+                {
+                    collision.gameObject.GetComponent<Selector>().Despawn();
+                }
                 _clicked = true;
                 break;
             case "Packet" when player.click && !_clicked:
@@ -31,6 +34,7 @@ public class TriggerIdentifier : MonoBehaviour
                 _clicked = true;
                 break;
             case "Despawner" when player.click && !_clicked:
+                collision.gameObject.GetComponent<DespawnButton>().Despawn(player.plIndex);
                 _despawn = true;
                 _clicked = true;
                 break;

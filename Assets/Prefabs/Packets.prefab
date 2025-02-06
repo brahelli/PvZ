@@ -758,10 +758,10 @@ GameObject:
   - component: {fileID: 1815746935500721219}
   - component: {fileID: 1752949614298291493}
   - component: {fileID: 8283454330532926362}
-  - component: {fileID: 8183946246955589026}
+  - component: {fileID: 7270461317227411340}
   m_Layer: 13
   m_Name: Despawn
-  m_TagString: PacketClose
+  m_TagString: Despawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -905,7 +905,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8183946246955589026
+--- !u!114 &7270461317227411340
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -914,7 +914,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6478745622933082688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c520439b0955f534e9a9ec6dd4f97591, type: 3}
+  m_Script: {fileID: 11500000, guid: 4611fa6bfec185b46b211f3965bb4144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6592786506748427724
