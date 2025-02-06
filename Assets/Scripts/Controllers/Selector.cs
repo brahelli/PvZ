@@ -30,7 +30,6 @@ public class Selector : MonoBehaviour
 
     public void Despawn()
     {
-        Debug.Log("Despawn");
         _plantController.DeSpawnPlants(h, v);
         _plantController.EndSpawn();
         plantSpawned = false;

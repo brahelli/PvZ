@@ -22,6 +22,7 @@ public class TriggerIdentifier : MonoBehaviour
                 else
                 {
                     collision.gameObject.GetComponent<Selector>().Despawn();
+                    _despawn = false;
                 }
                 _clicked = true;
                 break;

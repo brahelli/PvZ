@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DespawnButton : MonoBehaviour
@@ -14,5 +12,10 @@ public class DespawnButton : MonoBehaviour
     public void Despawn(int player)
     {
         _plantControllers[player].StartDespawn(player);
+        
+        Destroy(transform.parent.gameObject, .3f);
+
+        Animator anim = transform.parent.GetComponent<Animator>();
+        anim.SetTrigger("Close");
     }
 }
