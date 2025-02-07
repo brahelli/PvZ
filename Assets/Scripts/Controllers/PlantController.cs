@@ -84,11 +84,13 @@ public class PlantController : MonoBehaviour
         //If the player does not have enough sun, return and do nothing
         if (!(gameManager.sun >= sunCost)) return;
         
-        if (!_isSpawning)
+        /*if (!_isSpawning)
         {
             gameManager.sun -= sunCost;
             //Subtract the cost of the plant from the player's sun if the player is not trying to spawn a plant already
-        }
+        }*/
+        
+        gameManager.sun -= sunCost;
         
         _isSpawning = true;
         //Set the isSpawning variable to true
