@@ -28,6 +28,8 @@ public class Plant : MonoBehaviour
 
     [SerializeField] private GameObject plantExplosion;
     
+    public float health = 5f;
+    
     //Initialise and assign variables
 
     private void Awake()
@@ -85,6 +87,16 @@ public class Plant : MonoBehaviour
         {
             _canFire = false;
             //If the current time is not greater than the countdown time, the plant cannot fire
+        }
+    }
+
+    public void Damage(float damage)
+    {
+        health -= damage;
+        
+        if (health <= 0)
+        {
+            gameObject.SetActive(false);
         }
     }
 

@@ -119,7 +119,7 @@ MonoBehaviour:
   - {x: 0.16446495, y: -1.3228078, z: 0}
   m_ShapePathHash: 1623124880
   m_Mesh: {fileID: 0}
-  m_InstanceId: 36212
+  m_InstanceId: 118776
   m_LocalBounds:
     m_Center: {x: 0.057407558, y: -0.0033831596, z: 0}
     m_Extent: {x: 0.7902518, y: 1.3194246, z: 0}
@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 6132287137523489410}
   - component: {fileID: 2530592023318941699}
   - component: {fileID: 3582416398081322429}
+  - component: {fileID: 9005005423729910062}
   m_Layer: 6
   m_Name: Zombie
   m_TagString: Zombie
@@ -251,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ShadowGroup: 0
   m_ComponentVersion: 1
-  m_HasRenderer: 1
+  m_HasRenderer: 0
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
@@ -271,7 +272,7 @@ MonoBehaviour:
   - {x: 0.16446495, y: -1.3228078, z: 0}
   m_ShapePathHash: 1623124880
   m_Mesh: {fileID: 0}
-  m_InstanceId: 36216
+  m_InstanceId: 118778
   m_LocalBounds:
     m_Center: {x: 0.057407558, y: -0.0033831596, z: 0}
     m_Extent: {x: 0.7902518, y: 1.3194246, z: 0}
@@ -296,3 +297,38 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!58 &9005005423729910062
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8112682706039722635}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.63307565, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.1330763
