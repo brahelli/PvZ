@@ -207,6 +207,17 @@
                     "action": "NewPlant",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "534157f4-594b-4a9e-a3fa-ad8bf96d5590",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "K&M",
+                    "action": "NewPlant",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

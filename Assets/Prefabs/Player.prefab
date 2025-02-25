@@ -107,6 +107,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4400481594183407362}
+  - {fileID: 4557930105020755558}
   - {fileID: 440842586940814303}
   - {fileID: 559752256308262100}
   m_Father: {fileID: 0}
@@ -977,6 +978,7 @@ GameObject:
   - component: {fileID: 5142474539036137448}
   - component: {fileID: 5936137190324424806}
   - component: {fileID: 9067998588223949551}
+  - component: {fileID: 8477867487323758191}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -998,7 +1000,7 @@ RectTransform:
   m_Children:
   - {fileID: 8005172802686610238}
   - {fileID: 3294500311996412881}
-  m_Father: {fileID: 440842586940814303}
+  m_Father: {fileID: 4648007164237997981}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1068,6 +1070,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8477867487323758191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8032035147152975979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec71949e1ae9e0842a242d971bb806a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorPos: {fileID: 440842586940814303}
 --- !u!1 &8701623556340826379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,8 +1113,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 4557930105020755558}
+  m_Children: []
   m_Father: {fileID: 4648007164237997981}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3446720041294920949
