@@ -1,12 +1,9 @@
 using UnityEngine;
-using TMPro;
 using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private Transform[] zombieSpawns;
-
-    [SerializeField] private TMP_Text sunDisp;
 
     public float sun;
     
@@ -36,12 +33,6 @@ public class GameManager : MonoBehaviour
 
         _noOfPlayers = _pim.playerCount;
 
-    }
-
-    private void Update()
-    {
-        sunDisp.text = "Sun: " + sun;
-        //Update the sun display text to show the current amount of sun to the user
     }
     
     public void PlayerJoined()
