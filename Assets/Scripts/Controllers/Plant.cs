@@ -112,10 +112,12 @@ public class Plant : MonoBehaviour
             case "Peashooter":
                 _bulletGo = availableProjectiles[0];
                 _sprite = availableSprites[0];
+                fireCooldown = 7.5f;
                 break;
             case "Sunflower":
                 _bulletGo = availableProjectiles[1];
                 _sprite = availableSprites[1];
+                fireCooldown = 7.5f;
                 break;
         }
 
