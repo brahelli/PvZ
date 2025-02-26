@@ -670,6 +670,7 @@ MonoBehaviour:
   joyCap: {fileID: 1031835943440294095}
   joyCapMoveTo: {x: 0, y: 0}
   color: {r: 0, g: 0, b: 0, a: 0}
+  sunText: {fileID: 1901961849651245392}
 --- !u!1 &5415300717409370929
 GameObject:
   m_ObjectHideFlags: 0

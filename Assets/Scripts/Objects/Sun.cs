@@ -28,6 +28,8 @@ public class Sun : MonoBehaviour
     [SerializeField] private Transform trail;
     [SerializeField] private Light2D sunLight;
 
+    private Animator _anim;
+    
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -37,6 +39,8 @@ public class Sun : MonoBehaviour
         _gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         _otherMoveTo = _rb.position + new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
+
+        _anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -52,9 +56,9 @@ public class Sun : MonoBehaviour
 
         if (_collected)
         {
-            transform.localScale = Vector2.SmoothDamp(transform.localScale, Vector2.zero, ref _refCollectedScale, .3f);
+            /*transform.localScale = Vector2.SmoothDamp(transform.localScale, Vector2.zero, ref _refCollectedScale, .3f);
             sparks.localScale = Vector2.SmoothDamp(sparks.transform.localScale, Vector2.zero, ref _refCollectedScaleSparks, .3f);
-            trail.localScale = Vector2.SmoothDamp(trail.transform.localScale, Vector2.zero, ref _refCollectedScaleTrail, .3f);
+            trail.localScale = Vector2.SmoothDamp(trail.transform.localScale, Vector2.zero, ref _refCollectedScaleTrail, .3f);*/
             sunLight.intensity = Mathf.SmoothDamp(sunLight.intensity, 0, ref _refCollectedIntensitySunLight, .3f);
         }
     }
@@ -65,6 +69,7 @@ public class Sun : MonoBehaviour
         _gm.sun += 25;
         _collected = true;
         Instantiate(collectExplode, transform.position, Quaternion.identity);
+        _anim.SetTrigger("Despawn");
         Destroy(gameObject, 5f);
     }
 }
