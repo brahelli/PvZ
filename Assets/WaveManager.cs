@@ -8,12 +8,12 @@ public class WaveManager : MonoBehaviour
 {
     [SerializeField] private GameObject Zombie;
 
-    private void Update()
+    private void Start()
     {
-        StartCoroutine(Start());
+        StartCoroutine(StartSpawning());
     }
 
-    private IEnumerator Start()
+    private IEnumerator StartSpawning()
     {
         while (true)
         {
