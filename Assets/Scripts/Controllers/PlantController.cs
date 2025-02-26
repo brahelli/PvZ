@@ -27,9 +27,27 @@ public class PlantController : MonoBehaviour
 
     private void CheckForZombies()
     {
+        Vector2 checkDir = Vector2.zero;
+
+        switch (player)
+        {
+            case 1:
+                checkDir = Vector2.left;
+                break;
+            case 2:
+                checkDir = Vector2.right;
+                break;
+            case 3:
+                checkDir = Vector2.up;
+                break;
+            case 4:
+                checkDir = Vector2.down;
+                break;
+        }
+        
         for (int i = 0; i < raycastOrigins.Length; i++)
         {
-            RaycastHit2D hit = Physics2D.Raycast(raycastOrigins[i], Vector2.left, 100f, zombies);
+            RaycastHit2D hit = Physics2D.Raycast(raycastOrigins[i], checkDir, 100f, zombies);
             //For every raycast origin, check if there is a zombie in the way
 
             if (hit.collider && hit.collider.CompareTag("Zombie"))
