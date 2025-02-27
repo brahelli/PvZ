@@ -1,12 +1,11 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class WaveManager : MonoBehaviour
-{
-    [SerializeField] private GameObject Zombie;
+{ 
+    
+    [SerializeField] private GameObject zombie;
 
     private void Start()
     {
@@ -18,7 +17,7 @@ public class WaveManager : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(5);
-            Instantiate(Zombie, new Vector2(Random.Range(6.33f, 11.36f), Random.Range(-1.5f, 3f)), Quaternion.identity);
+            Instantiate(zombie, new Vector2(Random.Range(6.33f, 11.36f), Random.Range(-1.5f, 3f)), Quaternion.identity);
         }
     }
 }

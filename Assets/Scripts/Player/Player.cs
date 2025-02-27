@@ -112,7 +112,7 @@ public class Player : MonoBehaviour
             {
                 //Depending on the device the player is using, move the cursor to the appropriate position
                 case "Controller":
-                    p1Cursor.position += (Vector3)_cursorPos * 0.25f;
+                    p1Cursor.position += (Vector3)_cursorPos * 0.15f;
                     //Move the cursor by the movement vector multiplied by 0.25
                     break;
                 case "K&M":
