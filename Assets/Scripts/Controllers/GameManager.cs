@@ -33,8 +33,8 @@ public class GameManager : MonoBehaviour
         
         Cursor.visible = false;
         //Hide the cursor
-        
-        Cursor.lockState = CursorLockMode.Locked;
+
+        Cursor.lockState = CursorLockMode.Confined;
     }
     
     private void Start()

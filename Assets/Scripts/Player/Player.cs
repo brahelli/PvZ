@@ -78,7 +78,7 @@ public class Player : MonoBehaviour
         cursor.pi = _pi;
         //Set the PlayerInput component of the cursor to this object's PlayerInput component
 
-        cam = _pi.camera;
+        cam = Camera.main;
 
         plIndex = _pi.playerIndex;
 
