@@ -13,6 +13,14 @@ public class GameManager : MonoBehaviour
 
     private int _noOfPlayers;
     
+    [SerializeField] private Vector3[] cameraPositions;
+    [SerializeField] private float[] cameraSizes;
+
+    [SerializeField] private Camera cam;
+    
+    private Vector3 _moveRef;
+    private float _moveRef2;
+    
     //Initialise and assign variables
 
     private void Awake()
@@ -25,6 +33,8 @@ public class GameManager : MonoBehaviour
         
         Cursor.visible = false;
         //Hide the cursor
+        
+        Cursor.lockState = CursorLockMode.Locked;
     }
     
     private void Start()
@@ -37,6 +47,35 @@ public class GameManager : MonoBehaviour
     
     public void PlayerJoined()
     {
+        _noOfPlayers = _pim.playerCount;
+        
         lanes[_noOfPlayers].SetActive(true);
+    }
+    
+    void Update()
+    {
+        switch (_noOfPlayers)
+        {
+            case 0:
+                cam.transform.position = Vector3.SmoothDamp(cam.transform.position, new Vector3(-22.58f, -16.57f, -10), ref _moveRef, 0.5f);
+                cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, 4.28f, ref _moveRef2, 0.5f);
+                break;
+            case 1:
+                cam.transform.position = Vector3.SmoothDamp(cam.transform.position, cameraPositions[0], ref _moveRef, 0.5f);
+                cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, cameraSizes[0], ref _moveRef2, 0.5f);
+                break;
+            case 2:
+                cam.transform.position = Vector3.SmoothDamp(cam.transform.position, cameraPositions[1], ref _moveRef, 0.5f);
+                cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, cameraSizes[1], ref _moveRef2, 0.5f);
+                break;
+            case 3:
+                cam.transform.position = Vector3.SmoothDamp(cam.transform.position, cameraPositions[2], ref _moveRef, 0.5f);
+                cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, cameraSizes[2], ref _moveRef2, 0.5f);
+                break;
+            case 4:
+                cam.transform.position = Vector3.SmoothDamp(cam.transform.position, cameraPositions[3], ref _moveRef, 0.5f);
+                cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, cameraSizes[3], ref _moveRef2, 0.5f);
+                break;
+        }
     }
 }

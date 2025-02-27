@@ -13,8 +13,6 @@ public class PlantController : MonoBehaviour
 
     [SerializeField] private GameManager gameManager;
 
-    private bool _isSpawning;
-
     public int player;
     
     //Initialise and assign variables
@@ -109,9 +107,6 @@ public class PlantController : MonoBehaviour
         }*/
         
         gameManager.sun -= sunCost;
-        
-        _isSpawning = true;
-        //Set the isSpawning variable to true
 
         GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
         foreach (GameObject t in selectors)
@@ -125,7 +120,6 @@ public class PlantController : MonoBehaviour
 
     public void StartDespawn(int playerS)
     {
-        Debug.Log("Start Despawn");
         
         GameObject[] selectors = GameObject.FindGameObjectsWithTag("Selector");
         foreach (GameObject t in selectors)
@@ -146,8 +140,6 @@ public class PlantController : MonoBehaviour
             //Disable spawning on every selector
         }
         
-        _isSpawning = false;
-        //Set the isSpawning variable to false
     }
 
     public void SpawnPlants(int plantPosH, int plantPosV, string plantType)
