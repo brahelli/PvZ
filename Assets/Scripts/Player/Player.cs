@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
     public int plIndex;
 
     public bool packetsSpawned;
+
+    private PassThroughToPacket currentPackets;
     
     //Initialise and assign variables
 
@@ -52,11 +54,21 @@ public class Player : MonoBehaviour
         if (!clicked && context.performed && !packetsSpawned)
         {
             PassThroughToPacket packetsP = Instantiate(packets, p1Cursor.position, quaternion.identity).GetComponent<PassThroughToPacket>();
+            currentPackets = packetsP;
 
             packetsP.player = this;
             packetsSpawned = true;
             
             clicked = true;
+        }
+        else if(!clicked && context.performed && currentPackets != null)
+        {
+            currentPackets.player.packetsSpawned = false;
+        
+            Destroy(currentPackets.gameObject, .3f);
+
+            Animator anim = currentPackets.GetComponent<Animator>();
+            anim.SetTrigger("Close");
         }
     }
 
