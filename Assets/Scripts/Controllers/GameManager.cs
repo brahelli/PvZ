@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     private Vector3 _moveRef;
     private float _moveRef2;
     
+    [SerializeField] private WaveManager waveManager;
+    
     //Initialise and assign variables
 
     private void Awake()
@@ -43,11 +45,17 @@ public class GameManager : MonoBehaviour
 
         _noOfPlayers = _pim.playerCount;
 
+        sun = 25;
     }
     
     public void PlayerJoined()
     {
         _noOfPlayers = _pim.playerCount;
+
+        if (_noOfPlayers == 1)
+        {
+            waveManager.StartLevel();
+        }
         
         lanes[_noOfPlayers].SetActive(true);
     }
