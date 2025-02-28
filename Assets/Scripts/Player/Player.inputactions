@@ -143,6 +143,17 @@
                     "action": "NewPlant",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "09d2d844-0316-469c-9e8b-940301591e13",
+                    "path": "<Touchscreen>/touch*/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "NewPlant",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
