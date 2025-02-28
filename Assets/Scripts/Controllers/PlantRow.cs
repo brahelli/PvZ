@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlantRow : MonoBehaviour
@@ -23,5 +24,21 @@ public class PlantRow : MonoBehaviour
         Plant currentPlant = plants[plant];
         currentPlant.gameObject.SetActive(false);
         //Deactivate the plant at the specified position
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Zombie"))
+        {
+            gameObject.tag = "ZombieDetected";
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Zombie"))
+        {
+            gameObject.tag = "Untagged";
+        }
     }
 }

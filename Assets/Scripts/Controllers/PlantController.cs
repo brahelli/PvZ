@@ -19,11 +19,11 @@ public class PlantController : MonoBehaviour
 
     private void Update()
     {
-        CheckForZombies();
+        //CheckForZombies();
         //Check for zombies in the raycast origins
     }
 
-    private void CheckForZombies()
+    /*private void CheckForZombies()
     {
         Vector2 checkDir = Vector2.zero;
 
@@ -93,7 +93,7 @@ public class PlantController : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
 
     private void StartSpawn(string plantType, int sunCost, int playerS)
     {
