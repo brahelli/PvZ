@@ -50953,6 +50953,7 @@ MonoBehaviour:
   - 11.09
   - 17.83
   cam: {fileID: 519420031}
+  waveManager: {fileID: 1975351006}
 --- !u!4 &1047687005
 Transform:
   m_ObjectHideFlags: 0
@@ -130861,6 +130862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombie: {fileID: 8112682706039722635, guid: a913a96f52f08a84f9f03480a2846331, type: 3}
   sun: {fileID: 1752695597140669583, guid: bc5bef7978264ac419629365dc32b4c1, type: 3}
+  gameManager: {fileID: 1047687004}
 --- !u!43 &1978477109
 Mesh:
   m_ObjectHideFlags: 0
