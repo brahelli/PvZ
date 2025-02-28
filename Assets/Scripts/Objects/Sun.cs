@@ -45,20 +45,17 @@ public class Sun : MonoBehaviour
 
     private void Update()
     {
-        if (_rb.position.y > _yToFall && !_collected && !spawnedBySunflower)
+        /*if (_rb.position.y > _yToFall && !_collected && !spawnedBySunflower)
         {
             transform.position = Vector2.SmoothDamp(_rb.position, new Vector2(_rb.position.x, _yToFall), ref _collectedRef, 10f);
         }
-        else if (spawnedBySunflower)
+        else */if (spawnedBySunflower && !_collected)
         {
             transform.position = Vector2.SmoothDamp(_rb.position, _otherMoveTo, ref _otherRef, .75f);
         }
 
         if (_collected)
         {
-            /*transform.localScale = Vector2.SmoothDamp(transform.localScale, Vector2.zero, ref _refCollectedScale, .3f);
-            sparks.localScale = Vector2.SmoothDamp(sparks.transform.localScale, Vector2.zero, ref _refCollectedScaleSparks, .3f);
-            trail.localScale = Vector2.SmoothDamp(trail.transform.localScale, Vector2.zero, ref _refCollectedScaleTrail, .3f);*/
             sunLight.intensity = Mathf.SmoothDamp(sunLight.intensity, 0, ref _refCollectedIntensitySunLight, .3f);
         }
     }

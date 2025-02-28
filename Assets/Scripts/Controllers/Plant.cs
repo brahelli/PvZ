@@ -42,6 +42,7 @@ public class Plant : MonoBehaviour
     private void Start()
     {
         _parent = transform.parent.transform;
+        _countdown = Time.time + fireCooldown;
     }
 
     private void Update()

@@ -6,18 +6,17 @@ public class WaveManager : MonoBehaviour
 { 
     
     [SerializeField] private GameObject zombie;
+    [SerializeField] private GameObject sun;
 
     private void Start()
     {
-        StartCoroutine(StartSpawning());
+        StartCoroutine(Level1());
     }
 
-    private IEnumerator StartSpawning()
+    private IEnumerator Level1()
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(5);
-            Instantiate(zombie, new Vector2(Random.Range(6.33f, 11.36f), Random.Range(-1.5f, 3f)), Quaternion.identity);
-        }
+        Instantiate(sun, new Vector2(Random.Range(-9.25f, 6.38f), Random.Range(-2.81f, 4.37f)), Quaternion.identity);
+        yield return new WaitForSeconds(5);
+        Instantiate(zombie, new Vector2(Random.Range(6.33f, 11.36f), Random.Range(-1.5f, 3f)), Quaternion.identity);
     }
 }
