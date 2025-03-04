@@ -30,6 +30,8 @@ public class Plant : MonoBehaviour
     
     public float health = 5f;
     
+    private Animator _animator;
+    
     //Initialise and assign variables
 
     private void Awake()
@@ -37,6 +39,7 @@ public class Plant : MonoBehaviour
         _parentPlantController = transform.parent.transform.parent.GetComponent<PlantController>();
         _plantSprite = GetComponent<SpriteRenderer>();
         //Get the SpriteRenderer component of this plant
+        _animator = GetComponent<Animator>();
     }
     
     private void Start()
@@ -145,5 +148,7 @@ public class Plant : MonoBehaviour
                 _bulletMoveDirection = Vector2.up;
                 break;
         }
+        
+        _animator.SetTrigger("Spawn");
     }
 }
