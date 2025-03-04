@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     private PlayerInputManager _pim;
 
-    private int _noOfPlayers;
+    public int noOfPlayers;
     
     [SerializeField] private Vector3[] cameraPositions;
     [SerializeField] private float[] cameraSizes;
@@ -43,26 +43,26 @@ public class GameManager : MonoBehaviour
     {
         _pim = GetComponent<PlayerInputManager>();
 
-        _noOfPlayers = _pim.playerCount;
+        noOfPlayers = _pim.playerCount;
 
         sun = 25;
     }
     
     public void PlayerJoined()
     {
-        _noOfPlayers = _pim.playerCount;
+        noOfPlayers = _pim.playerCount;
 
-        if (_noOfPlayers == 1)
+        if (noOfPlayers == 1)
         {
             waveManager.StartLevel();
         }
         
-        lanes[_noOfPlayers].SetActive(true);
+        lanes[noOfPlayers].SetActive(true);
     }
     
     void Update()
     {
-        switch (_noOfPlayers)
+        switch (noOfPlayers)
         {
             case 0:
                 cam.transform.position = Vector3.SmoothDamp(cam.transform.position, new Vector3(-22.58f, -16.57f, -10), ref _moveRef, 0.5f);

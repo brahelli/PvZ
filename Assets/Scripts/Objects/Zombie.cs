@@ -1,14 +1,13 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Zombie : MonoBehaviour
 {
     public float moveSpeed = 3f;
     public float damage = 1f;
-    public float health = 7f;
+    public float health = 10f;
 
     [SerializeField] private float attackTime = 1;
-    private float _nextAttackTime = 0;
+    private float _nextAttackTime;
 
     private Rigidbody2D _rb;
 
