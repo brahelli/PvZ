@@ -6,7 +6,7 @@ public class Zombie : MonoBehaviour
     public float damage = 1f;
     public float health = 10f;
 
-    [SerializeField] private float attackTime = 1;
+    [SerializeField] private float attackTime = 3;
     private float _nextAttackTime;
 
     private Rigidbody2D _rb;

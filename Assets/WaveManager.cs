@@ -35,15 +35,16 @@ public class WaveManager : MonoBehaviour
             _timeUntilNextSun = Time.time + Random.Range(10f, 40f);
         }
         
-        waveText.text = "Completed Waves: " + (_bigWavesCompleted - 1);
+        waveText.text = "Completed Waves: " + (_bigWavesCompleted - 1).ToString();
     }
 
     private IEnumerator Waves()
     {
         _players = gameManager.noOfPlayers;
         
-        if (_timeUntilBigWave < Time.time)
+        if (_timeUntilBigWave > Time.time)
         {
+            Debug.Log("Spawn Normal Wave");
             yield return new WaitForSeconds(Random.Range(20, 30));
             float randomNoZombies = Random.Range(1, 3) * _players;
             for (int i = 0; i < randomNoZombies; i++)
@@ -53,15 +54,16 @@ public class WaveManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("Spawn Big Wave");
             float randomNoZombies = Random.Range(5, 10) * _players * _bigWavesCompleted;
             for (int i = 0; i < randomNoZombies; i++)
             {
                 Instantiate(zombie, new Vector2(Random.Range(6.33f, 11.36f), Random.Range(-1.5f, 3f)), Quaternion.identity);
             }
+            _bigWavesCompleted++;
             _timeUntilBigWave = Time.time + 120f;
         }
-        _bigWavesCompleted++;
+        
         StartCoroutine(Waves());
-        yield return null;
     }
 }
