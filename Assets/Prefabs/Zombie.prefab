@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2589219302068530901}
   - component: {fileID: 3819526196386141508}
-  - component: {fileID: 925863497846200153}
   m_Layer: 6
   m_Name: Spr
   m_TagString: Zombie
@@ -85,44 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &925863497846200153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770917933726057743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_ComponentVersion: 1
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 00000000
-  m_ShapePath:
-  - {x: -0.33294326, y: -1.0812991, z: 0}
-  - {x: -0.16679531, y: -0.8046117, z: 0}
-  - {x: -0.5024872, y: -0.5450267, z: 0}
-  - {x: -0.42727506, y: 0.3457956, z: 0}
-  - {x: -0.70751894, y: 0.6113518, z: 0}
-  - {x: -0.73284423, y: 1.1560913, z: 0}
-  - {x: -0.23445478, y: 1.3160415, z: 0}
-  - {x: 0.030832827, y: 1.0750595, z: 0}
-  - {x: 0.041356772, y: 0.77618325, z: 0}
-  - {x: 0.5908423, y: 0.02273582, z: 0}
-  - {x: 0.84765935, y: -1.1826564, z: 0}
-  - {x: 0.16446495, y: -1.3228078, z: 0}
-  m_ShapePathHash: 1623124880
-  m_Mesh: {fileID: 0}
-  m_InstanceId: 83630
-  m_LocalBounds:
-    m_Center: {x: 0.057407558, y: -0.0033831596, z: 0}
-    m_Extent: {x: 0.7902518, y: 1.3194246, z: 0}
 --- !u!1 &8112682706039722635
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +200,9 @@ MonoBehaviour:
   health: 7
   attackTime: 1
   spriteRenderer: {fileID: 3819526196386141508}
+  sprites:
+  - {fileID: 21300000, guid: fc6b89ceaf95b3c4983480f5de5d0469, type: 3}
+  - {fileID: 21300000, guid: 890dbd16c354d634581cfa34e78f944c, type: 3}
 --- !u!95 &3582416398081322429
 Animator:
   serializedVersion: 5

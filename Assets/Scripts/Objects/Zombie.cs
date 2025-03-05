@@ -18,6 +18,8 @@ public class Zombie : MonoBehaviour
     private Vector2 _direction;
     
     [SerializeField] private SpriteRenderer spriteRenderer;
+    
+    [SerializeField] private Sprite[] sprites;
 
     private void Start()
     {
@@ -26,6 +28,7 @@ public class Zombie : MonoBehaviour
         _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         
         int randomDirection = 0;
+        RandomZombie();
 
         switch (_gameManager.noOfPlayers)
         {
@@ -94,5 +97,21 @@ public class Zombie : MonoBehaviour
             other.GetComponent<Plant>().Damage(damage);
             _nextAttackTime = Time.time + attackTime;
         }
+    }
+    
+    private void RandomZombie()
+    {
+        int randomZombie = Random.Range(0, sprites.Length);
+
+        switch (randomZombie)
+        {
+            case 0:
+                health = 10f;
+                break;
+            case 1:
+                health = 15f;
+                break;
+        }
+        spriteRenderer.sprite = sprites[randomZombie];
     }
 }
