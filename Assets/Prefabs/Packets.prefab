@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 2801349218051262218}
   - component: {fileID: 5819859029950917395}
   m_Layer: 9
-  m_Name: Seed Packet (Null)
+  m_Name: Seed Packet (Wallnut)
   m_TagString: Packet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -248,7 +248,7 @@ SpriteRenderer:
   m_SortingLayerID: -181206523
   m_SortingLayer: 1
   m_SortingOrder: 50
-  m_Sprite: {fileID: 21300000, guid: 83f3610e19321fe45b5bdc7e4d99dff2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe7e6dd3fe400ec4ab528f8111ce9b6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 719c19a382f4a29478ab02a13edd5629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantType: Peashooter
+  plantType: Wallnut
 --- !u!61 &2801349218051262218
 BoxCollider2D:
   m_ObjectHideFlags: 0

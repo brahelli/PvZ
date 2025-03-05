@@ -117,12 +117,21 @@ public class Plant : MonoBehaviour
                 _bulletGo = availableProjectiles[0];
                 _sprite = availableSprites[0];
                 fireCooldown = 5f;
+                health = 5f;
                 break;
             case "Sunflower":
                 _bulletGo = availableProjectiles[1];
                 _sprite = availableSprites[1];
                 fireCooldown = 8.75f;
+                health = 5f;
                 break;
+            case "Wallnut":
+                _bulletGo = availableProjectiles[0];
+                _sprite = availableSprites[2];
+                fireCooldown = 999999999999999999999f;
+                health = 20f;
+                break;
+                
         }
 
         switch (_parentPlantController.player)

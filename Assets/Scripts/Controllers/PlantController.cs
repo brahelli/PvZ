@@ -125,6 +125,9 @@ public class PlantController : MonoBehaviour
             case "Sunflower":
                 StartSpawn(plantType, 50, playerS);
                 break;
+            case "Wallnut":
+                StartSpawn(plantType, 50, playerS);
+                break;
         }
     }
 }
