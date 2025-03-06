@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Packet : MonoBehaviour
 {
+    private static readonly int Close = Animator.StringToHash("Close");
     private PlantController[] _plantControllers;
     private PassThroughToPacket _passThroughToPacket;
 
@@ -25,6 +26,6 @@ public class Packet : MonoBehaviour
         Destroy(transform.parent.gameObject, .3f);
 
         Animator anim = transform.parent.GetComponent<Animator>();
-        anim.SetTrigger("Close");
+        anim.SetTrigger(Close);
     }
 }

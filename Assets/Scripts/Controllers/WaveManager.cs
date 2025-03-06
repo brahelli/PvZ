@@ -44,7 +44,6 @@ public class WaveManager : MonoBehaviour
         
         if (_timeUntilBigWave > Time.time)
         {
-            Debug.Log("Spawn Normal Wave");
             yield return new WaitForSeconds(Random.Range(20, 30));
             float randomNoZombies = Random.Range(1, 3) * _players;
             for (int i = 0; i < randomNoZombies; i++)
@@ -54,7 +53,6 @@ public class WaveManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Spawn Big Wave");
             float randomNoZombies = Random.Range(5, 10) * _players * _bigWavesCompleted;
             for (int i = 0; i < randomNoZombies; i++)
             {

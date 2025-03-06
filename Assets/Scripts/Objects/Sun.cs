@@ -3,9 +3,8 @@ using UnityEngine.Rendering.Universal;
 
 public class Sun : MonoBehaviour
 {
+    private static readonly int Despawn = Animator.StringToHash("Despawn");
     private Rigidbody2D _rb;
-
-    private float _yToFall;
 
     private bool _collected;
     private Vector2 _refCollectedScale;
@@ -34,8 +33,6 @@ public class Sun : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
 
-        _yToFall = Random.Range(-3.5f, 3f);
-
         _gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         _otherMoveTo = _rb.position + new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
@@ -45,11 +42,7 @@ public class Sun : MonoBehaviour
 
     private void Update()
     {
-        /*if (_rb.position.y > _yToFall && !_collected && !spawnedBySunflower)
-        {
-            transform.position = Vector2.SmoothDamp(_rb.position, new Vector2(_rb.position.x, _yToFall), ref _collectedRef, 10f);
-        }
-        else */if (spawnedBySunflower && !_collected)
+        if (spawnedBySunflower && !_collected)
         {
             transform.position = Vector2.SmoothDamp(_rb.position, _otherMoveTo, ref _otherRef, .75f);
         }
@@ -66,7 +59,7 @@ public class Sun : MonoBehaviour
         _gm.sun += 25;
         _collected = true;
         Instantiate(collectExplode, transform.position, Quaternion.identity);
-        _anim.SetTrigger("Despawn");
+        _anim.SetTrigger(Despawn);
         Destroy(gameObject, 5f);
     }
 }
