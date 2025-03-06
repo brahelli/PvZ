@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LoseCondition : MonoBehaviour
 {
@@ -10,6 +12,13 @@ public class LoseCondition : MonoBehaviour
         if (other.CompareTag("Zombie"))
         {
             gameOverScreen.SetActive(true);
+            StartCoroutine(nameof(End));
         }
+    }
+
+    private IEnumerator End()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("Level1");
     }
 }

@@ -50,9 +50,6 @@ public class Plant : MonoBehaviour
 
     private void Update()
     {
-        _plantSprite.sprite = _sprite;
-        //Set the correct sprite
-
         FireCheck();
         //Check if the plant can fire a projectile
 
@@ -159,5 +156,7 @@ public class Plant : MonoBehaviour
         }
         
         _animator.SetTrigger("Spawn");
+        
+        _plantSprite.sprite = _sprite;
     }
 }
