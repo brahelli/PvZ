@@ -122,7 +122,7 @@ public class Plant : MonoBehaviour
                 fireCooldown = 8.75f;
                 health = 30f;
                 break;
-            case "Wallnut":
+            case "Walnut":
                 _bulletGo = availableProjectiles[0];
                 _sprite = availableSprites[2];
                 fireCooldown = 999999999999999999999f;
