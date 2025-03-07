@@ -3,8 +3,6 @@ using UnityEngine;
 public class PlantController : MonoBehaviour
 {
     [SerializeField] private PlantRow[] plantRows;
-    
-    [SerializeField] private LayerMask zombies;
 
     [SerializeField] private GameManager gameManager;
 
