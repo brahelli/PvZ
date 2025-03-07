@@ -21,8 +21,6 @@ public class Player : MonoBehaviour
     private Color _cursorColor;
     private float _r, _g, _b;
 
-    private RaycastHit2D _hit;
-
     [SerializeField] private GameObject packets;
 
     [SerializeField] private Camera cam;
