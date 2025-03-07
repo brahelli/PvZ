@@ -5335,17 +5335,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3be3ce20398764189e988d4379e1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raycastOrigins:
-  - {x: 6.5, y: 3}
-  - {x: 6.5, y: 1.8}
-  - {x: 6.5, y: 0.6}
-  - {x: 6.5, y: -0.6}
-  - {x: 6.5, y: -1.8}
   plantRowOne: {fileID: 694757407}
   plantRowTwo: {fileID: 332346515}
   plantRowThree: {fileID: 223325702}
   plantRowFour: {fileID: 1199872031}
   plantRowFive: {fileID: 1539633176}
+  plantRows:
+  - {fileID: 694757407}
+  - {fileID: 332346515}
+  - {fileID: 223325702}
+  - {fileID: 1199872031}
+  - {fileID: 1539633176}
   zombies:
     serializedVersion: 2
     m_Bits: 64
@@ -27490,17 +27490,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3be3ce20398764189e988d4379e1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raycastOrigins:
-  - {x: 6.5, y: 3}
-  - {x: 7.75, y: 3}
-  - {x: 9, y: 3}
-  - {x: 10.25, y: 3}
-  - {x: 11.5, y: 3}
   plantRowOne: {fileID: 250117389}
   plantRowTwo: {fileID: 1726929651}
   plantRowThree: {fileID: 2024358445}
   plantRowFour: {fileID: 348916509}
   plantRowFive: {fileID: 1768677044}
+  plantRows:
+  - {fileID: 250117389}
+  - {fileID: 1726929651}
+  - {fileID: 2024358445}
+  - {fileID: 348916509}
+  - {fileID: 1768677044}
   zombies:
     serializedVersion: 2
     m_Bits: 64
@@ -29823,17 +29823,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3be3ce20398764189e988d4379e1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raycastOrigins:
-  - {x: 6.5, y: -1.8}
-  - {x: 7.75, y: -1.8}
-  - {x: 9, y: -1.8}
-  - {x: 10.25, y: -1.8}
-  - {x: 11.5, y: -1.8}
   plantRowOne: {fileID: 1901070527}
   plantRowTwo: {fileID: 858150792}
   plantRowThree: {fileID: 1070083474}
   plantRowFour: {fileID: 1453908331}
   plantRowFive: {fileID: 508297152}
+  plantRows:
+  - {fileID: 1901070527}
+  - {fileID: 858150792}
+  - {fileID: 1070083474}
+  - {fileID: 1453908331}
+  - {fileID: 508297152}
   zombies:
     serializedVersion: 2
     m_Bits: 64
@@ -42021,17 +42021,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3be3ce20398764189e988d4379e1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raycastOrigins:
-  - {x: 11.5, y: 3}
-  - {x: 11.5, y: 1.8}
-  - {x: 11.5, y: 0.6}
-  - {x: 11.5, y: -0.6}
-  - {x: 11.5, y: -1.8}
   plantRowOne: {fileID: 525380021}
   plantRowTwo: {fileID: 967255457}
   plantRowThree: {fileID: 1792163008}
   plantRowFour: {fileID: 528414478}
   plantRowFive: {fileID: 1244255649}
+  plantRows:
+  - {fileID: 525380021}
+  - {fileID: 967255457}
+  - {fileID: 1792163008}
+  - {fileID: 528414478}
+  - {fileID: 1244255649}
   zombies:
     serializedVersion: 2
     m_Bits: 64
