@@ -74,13 +74,13 @@ public class Zombie : MonoBehaviour
     private void Update()
     {
         _rb.MovePosition(_rb.position + _direction * (moveSpeed * Time.deltaTime));
-
-        if (health <= 0) { Die(); }
     }
 
     public void DealDamage(float damageBy)
     {
         health -= damageBy;
+        
+        if (health <= 0) { Die(); }
     }
 
     private void Die()
