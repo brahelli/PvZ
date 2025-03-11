@@ -4708,7 +4708,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.357
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.06
+  m_Intensity: 1.03
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000050233f5
@@ -4718,9 +4718,9 @@ MonoBehaviour:
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 360
-  m_NormalMapQuality: 1
+  m_NormalMapQuality: 2
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 0.331
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -5335,20 +5335,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3be3ce20398764189e988d4379e1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantRowOne: {fileID: 694757407}
-  plantRowTwo: {fileID: 332346515}
-  plantRowThree: {fileID: 223325702}
-  plantRowFour: {fileID: 1199872031}
-  plantRowFive: {fileID: 1539633176}
   plantRows:
   - {fileID: 694757407}
   - {fileID: 332346515}
   - {fileID: 223325702}
   - {fileID: 1199872031}
   - {fileID: 1539633176}
-  zombies:
-    serializedVersion: 2
-    m_Bits: 64
   gameManager: {fileID: 1047687004}
   player: 2
 --- !u!1 &135628725
@@ -27490,20 +27482,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3be3ce20398764189e988d4379e1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantRowOne: {fileID: 250117389}
-  plantRowTwo: {fileID: 1726929651}
-  plantRowThree: {fileID: 2024358445}
-  plantRowFour: {fileID: 348916509}
-  plantRowFive: {fileID: 1768677044}
   plantRows:
   - {fileID: 250117389}
   - {fileID: 1726929651}
   - {fileID: 2024358445}
   - {fileID: 348916509}
   - {fileID: 1768677044}
-  zombies:
-    serializedVersion: 2
-    m_Bits: 64
   gameManager: {fileID: 1047687004}
   player: 4
 --- !u!1 &634182684
@@ -29823,20 +29807,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3be3ce20398764189e988d4379e1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantRowOne: {fileID: 1901070527}
-  plantRowTwo: {fileID: 858150792}
-  plantRowThree: {fileID: 1070083474}
-  plantRowFour: {fileID: 1453908331}
-  plantRowFive: {fileID: 508297152}
   plantRows:
   - {fileID: 1901070527}
   - {fileID: 858150792}
   - {fileID: 1070083474}
   - {fileID: 1453908331}
   - {fileID: 508297152}
-  zombies:
-    serializedVersion: 2
-    m_Bits: 64
   gameManager: {fileID: 1047687004}
   player: 3
 --- !u!1 &699516277
@@ -42021,20 +41997,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3be3ce20398764189e988d4379e1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantRowOne: {fileID: 525380021}
-  plantRowTwo: {fileID: 967255457}
-  plantRowThree: {fileID: 1792163008}
-  plantRowFour: {fileID: 528414478}
-  plantRowFive: {fileID: 1244255649}
   plantRows:
   - {fileID: 525380021}
   - {fileID: 967255457}
   - {fileID: 1792163008}
   - {fileID: 528414478}
   - {fileID: 1244255649}
-  zombies:
-    serializedVersion: 2
-    m_Bits: 64
   gameManager: {fileID: 1047687004}
   player: 1
 --- !u!1 &986828980
@@ -59789,7 +59757,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.357
   m_Color: {r: 0.6650944, g: 0.9605993, b: 1, a: 1}
-  m_Intensity: 2.06
+  m_Intensity: 1.03
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000050233f5
@@ -59799,9 +59767,9 @@ MonoBehaviour:
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 360
-  m_NormalMapQuality: 1
+  m_NormalMapQuality: 2
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 0.331
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
